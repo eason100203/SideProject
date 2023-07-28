@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.videoContainer {
+    /* border: 3px sandybrown solid; */
+    position: relative;
+    margin-bottom: -10px;
+}
+
+
+#mainNavbar {
+    background-color: #DECCCC;
+    box-shadow: 0 2px 5px rgb(140, 116, 116);
+    position: sticky;
+    z-index: 9999;
+    top: 0px;
+
+}
+
+#mainNavbar img {
+    width: 80px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+
+#mainNavbar img:hover {
+    width: 80px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    transform: rotate(-2deg) scale(1.15);
+}
+
+#navLinks a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#navLinks a:hover {
+    color: rgb(14, 14, 210);
+    font-weight: bold;
+}
+
+
+#footerContainer {
+    height: 300px;
+    background-color: #DECCCC;
+    /* border: 5px sandybrown solid; */
+}
+
+#footerContainer hr {
+    color: rgb(255, 255, 255);
+    border: 1px white solid;
+
+}
+
+#footerContainer .footerlogo {
+    /* border: 3px saddlebrown solid; */
+    height: 45%;
+    justify-content: center;
+    width: 100%;
+}
+
+.footerlogo>img {
+    width: 200px;
+    height: 100px;
+}
+
+.footercontect {
+    justify-content: center;
+}
+
+.footercontect a {
+    width: 40px;
+    /* border: 2px seagreen solid; */
+
+}
+
+.footercontect i {
+    font-size: 2rem;
+    /* border: 3px salmon solid; */
+    color: aliceblue;
+}
+
+.ourcompany {
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+
+.ourcompany span {
+    color: rgb(51, 101, 238);
+    font-weight: bolder;
+    width: 100%;
+}
+
+.Selopt {
+    /* border: 5px solid aqua; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.showInfro {
+    position: relative;
+    list-style-type: none;
+    width: 100%;
+    height: 600px;
+    /* border: 5px rgb(92, 149, 255) solid; */
+    justify-content: center;
+
+}
+
+
+.showInfro li {
+    position: absolute;
+    /* border: 5px saddlebrown solid; */
+    width: 102%;
+    min-height: 600px;
+    left: 0;
+
+    /* border: 5px black solid; */
+}
+
+.showInfro h3 {
+    font-size: large;
+    font-weight: bold;
+    color: rgb(82, 42, 42);
+
+}
+
+.ShowMap {
+    /* border: 3px red solid; */
+    height: 470px;
+    width: 100%;
+    position: relative;
+}
+
+.ShowMap iframe {
+    position: absolute;
+    width: 100%;
+}
+
+.seldiv {
+    /* border: 3px rgb(236, 200, 81) solid; */
+    width: 100%;
+    height: 130px;
+}
+
+.seldiv h3 {
+    /* border: 3px rgb(236, 200, 81) solid; */
+    font-weight: bold;
+    color: rgb(14, 14, 210);
+}
+
+.xxx img {
+    margin-top: -40px;
+    padding: 20px;
+    margin-left: -30px;
+    width: 200px;
+    height: 180px;
+}
+
+#smallfont {
+    font-size: 12px;
+}
+
+
+
+
+/* taichung */
+.seldiv:has(select #TC)~.ShowMap .TaiChung {
+    visibility: hidden;
+}
+
+.seldiv:has(select #TC:checked)~.ShowMap .TaiChung {
+    visibility: visible;
+}
+
+.seldiv:has(select #TC)~.showInfro .TaiChung {
+    visibility: hidden;
+}
+
+.seldiv:has(select #TC:checked)~.showInfro .TaiChung {
+    visibility: visible;
+}
+
+
+
+/* taoyuan */
+.seldiv:has(select #TY)~.ShowMap .TaoYuan {
+    visibility: hidden;
+}
+
+.seldiv:has(select #TY:checked)~.ShowMap .TaoYuan {
+    visibility: visible;
+}
+
+.seldiv:has(select #TY)~.showInfro .TaoYuan {
+    visibility: hidden;
+}
+
+.seldiv:has(select #TY:checked)~.showInfro .TaoYuan {
+    visibility: visible;
+}
+
+
+
+/* tainan */
+.seldiv:has(select #TN)~.ShowMap .TaiNan {
+    visibility: hidden;
+}
+
+.seldiv:has(select #TN:checked)~.ShowMap .TaiNan {
+    visibility: visible;
+}
+
+.seldiv:has(select #TN)~.showInfro .TaiNan {
+    visibility: hidden;
+}
+
+.seldiv:has(select #TN:checked)~.showInfro .TaiNan {
+    visibility: visible;
+}
+
+
+
+/* xinbei */
+.seldiv:has(select #XB)~.ShowMap .XinBei {
+    visibility: hidden;
+}
+
+.seldiv:has(select #XB:checked)~.ShowMap .XinBei {
+    visibility: visible;
+}
+
+.seldiv:has(select #XB)~.showInfro .XinBei {
+    visibility: hidden;
+}
+
+.seldiv:has(select #XB:checked)~.showInfro .XinBei {
+    visibility: visible;
+}
+
+
+
+/* taipei */
+.seldiv:has(select #TP)~.ShowMap .TaiPei {
+    visibility: hidden;
+}
+
+.seldiv:has(select #TP:checked)~.ShowMap .TaiPei {
+    visibility: visible;
+}
+
+.seldiv:has(select #TP)~.showInfro .TaiPei {
+    visibility: hidden;
+}
+
+.seldiv:has(select #TP:checked)~.showInfro .TaiPei {
+    visibility: visible;
+}
+
+/* body:has(#TC:checked) {
+    color: rgb(255, 157, 30);
+}
+
+body:has(#TY:checked) {
+    color: rgb(255, 75, 75);
+}
+
+body:has(#TN:checked) {
+    color: rgb(255, 75, 75);
+}
+
+body:has(#XB:checked) {
+    color: rgb(87, 84, 255);
+}
+
+body:has(#TP:checked) {
+    color: brown;
+} */
+
+/* .container:has(#TC:checked) {
+    background-color: rgba(250, 255, 185, 0.3);
+    color: rgb(255, 157, 30);
+    font-weight: bolder;
+}
+
+.container:has(#TY:checked) {
+    background-color: rgba(255, 219, 249, 0.3);
+    color: rgb(255, 75, 75);
+    font-weight: bolder;
+}
+
+.container:has(#TN:checked) {
+    background-color: rgba(255, 228, 177, 0.3);
+   color: rgb(255, 75, 75);
+    font-weight: bolder;
+}
+
+.container:has(#XB:checked) {
+    background-color: rgba(214, 235, 255, 0.3);
+    color: rgb(87, 84, 255);
+    font-weight: bolder;
+}
+
+.container:has(#TP:checked) {
+    background-color: rgba(255, 219, 219, 0.3);
+    color: brown;
+    font-weight: bolder;
+} */

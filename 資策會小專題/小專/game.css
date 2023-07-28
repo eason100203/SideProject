@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.videoContainer {
+    /* border: 3px sandybrown solid; */
+    position: relative;
+    margin-bottom: -10px;
+}
+
+
+#mainNavbar {
+    background-color: #DECCCC;
+    box-shadow: 0 2px 5px rgb(140, 116, 116);
+    position: sticky;
+    z-index: 9999;
+    top: 0px;
+
+}
+
+#mainNavbar img {
+    width: 80px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+
+#mainNavbar img:hover {
+    width: 80px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    transform: rotate(-2deg) scale(1.15);
+}
+
+#navLinks a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#navLinks a:hover {
+    color: rgb(14, 14, 210);
+    font-weight: bold;
+}
+
+
+#footerContainer {
+    height: 300px;
+    background-color: #DECCCC;
+    /* border: 5px sandybrown solid; */
+}
+
+#footerContainer hr {
+    color: rgb(255, 255, 255);
+    border: 1px white solid;
+
+}
+
+#footerContainer .footerlogo {
+    /* border: 3px saddlebrown solid; */
+    height: 45%;
+    justify-content: center;
+    width: 100%;
+}
+
+.footerlogo>img {
+    width: 200px;
+    height: 100px;
+}
+
+.footercontect {
+    justify-content: center;
+}
+
+.footercontect a {
+    width: 40px;
+    /* border: 2px seagreen solid; */
+
+}
+
+.footercontect i {
+    font-size: 2rem;
+    /* border: 3px salmon solid; */
+    color: aliceblue;
+}
+
+.ourcompany {
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+
+.ourcompany span {
+    color: rgb(51, 101, 238);
+    font-weight: bolder;
+    width: 100%;
+}
+
+
+.backgroundimg {
+    display: flex;
+    margin: 20px 0px;
+    /* border: 3px red solid; */
+    position: relative;
+    width: 100%;
+}
+
+.showgame {
+    position: absolute;
+    /* border: 3px saddlebrown solid; */
+    width: 90%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 30;
+}
+
+.gamestart {
+    position: absolute;
+    align-self: center;
+    z-index: 31;
+    width: 40%;
+    border-radius: 25px;
+    font-weight: bold;
+    bottom: 35%;
+}
+
+.gamename {
+    position: absolute;
+    align-self: center;
+    z-index: 31;
+    width: 50%;
+    bottom: 48%;
+    animation-name: gamename;
+    animation-duration:1s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes gamename {
+    0% {
+        bottom: 49%;
+    }
+
+    100% {
+        bottom: 48%
+    }
+}
+
+.backgroundimg .bg {
+    width: 90%;
+
+}
+
+.backgroundimg .model {
+    position: absolute;
+    width: 30%;
+    /* border: 3px firebrick solid; */
+
+    left: 20%;
+}
+
+.backgroundimg p {
+    position: absolute;
+    /* border: 3px seagreen solid; */
+    width: 40%;
+    /* height: 20%; */
+    top: 12%;
+    right: 8%;
+
+}
+
+.wear {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    /* border: 3px seagreen solid; */
+    width: 40%;
+    height: 20%;
+    top: 20%;
+    right: 10%;
+    border: 4px rgb(0, 0, 0) solid;
+    box-shadow: 0 0 3px black;
+    background-color: rgb(43, 44, 51);
+    border-radius: 40px;
+}
+
+
+.colorchoose {
+    display: flex;
+    position: absolute;
+    border: 4px rgb(0, 0, 0) solid;
+    width: 30%;
+    height: 10%;
+    top: 42%;
+    right: 18%;
+    background-color: rgb(43, 44, 51);
+    border-radius: 25px;
+    box-shadow: 0 0 3px black;
+    justify-content: space-evenly;
+}
+
+.reset {
+    display: flex;
+    position: absolute;
+    border: 4px rgb(0, 0, 0) solid;
+    width: 5%;
+    height: 8%;
+    top: 43%;
+    right: 12%;
+    background-color: rgb(43, 44, 51);
+    border-radius: 50%;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 3px black;
+    font-size: 100%;
+
+}
+
+.reset img {
+
+    position: absolute;
+    width: 65%;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    font-size: 100%;
+
+}
+
+.reset:hover {
+    scale: 1.2;
+}
+
+
+
+.drass {
+    /* border: 3px aqua solid; */
+    width: 15%;
+    margin: 5px 0;
+}
+
+.jumpsuit {
+    /* border: 3px aqua solid; */
+    width: 13%;
+    margin: 5px 0;
+
+}
+
+.skirt {
+    /* border: 3px aqua solid; */
+    width: 20%;
+    margin: 5px 0;
+}
+
+.wearall:hover {
+    scale: 1.05;
+
+}
+
+.colorselect {
+    /* border: 3px saddlebrown solid; */
+    width: 13%;
+    height: 75%;
+    margin-top: 2%;
+    border-radius: 20px;
+}
+
+
+.colorselect:hover {
+    scale: 1.1;
+}
+
+.while {
+    background-color: #ffffff;
+}
+
+.blue {
+    background-color: rgb(66, 66, 226);
+}
+
+.green {
+    background-color: rgb(55, 235, 39);
+}
+
+.perple {
+    background-color: rgb(164, 28, 160);
+}
+
+.yellow {
+    background-color: rgb(255, 255, 65);
+}

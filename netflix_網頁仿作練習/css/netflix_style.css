@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(31, 31, 31);
+}
+
+.navtest {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 0 3px black;
+    background-color: black;
+
+}
+
+.sectiontest {
+    /* border: 5px red solid; */
+    background-color: rgb(31, 31, 31);
+}
+
+.heroimg {
+    /* border: 3px green solid; */
+    background: linear-gradient(to right, rgba(31, 31, 31, 1) 20%, rgba(0, 0, 0, 0) 80%), linear-gradient(to top, rgba(31, 31, 31, 1) 5%, rgba(0, 0, 0, 0) 30%), url(../img/spirited_away.jpg);
+    width: 100%;
+    background-size: cover;
+    padding-bottom: 23%;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+}
+
+.heroimg>figure {
+    /* border: 5px red solid; */
+    color: rgb(255, 255, 255);
+}
+
+figure>img {
+    /* border: 5px #c6e83c solid; */
+    width: 400px;
+    margin-left: 20px;
+}
+
+figure>figcaption {
+    color: rgb(255, 255, 255);
+    width: 500px;
+    /* border: 6px slateblue solid; */
+}
+
+figure>h1 {
+    /* border: 3px green solid; */
+    width: 200px;
+    font-size: 22px;
+    margin-top: 70px;
+    margin-left: 15px;
+}
+
+figcaption>p {
+    margin-left: 15px;
+}
+
+figcaption>p:nth-child(1) {
+    color: gray;
+    font-size: 15px;
+}
+
+figcaption span {
+    color: gray;
+    font-size: 15px;
+}
+
+.smallimg {
+    background: linear-gradient(to top, rgba(31, 31, 31, 1) 5%, rgba(0, 0, 0, 0) 30%), url(../img/神影少女small.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 280px;
+    background-repeat: no-repeat;
+    /* border: 3px green solid; */
+}
+
+.smcontent>.imglogo {
+    width: 80%;
+    margin-left: 20px;
+}
+
+.smcontent>h1 {
+    width: 200px;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-left: 15px;
+    color: aliceblue;
+}
+
+.smcontent>figcaption {
+    width: 100%;
+}
+
+.smcontent p {
+    /* border: 4px red solid; */
+    color: aliceblue;
+
+}
+
+@media screen and (max-width: 414px) {
+    .navtest {
+        width: 415px;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        box-shadow: 0 0 3px black;
+        background-color: black;
+    }
+}
+
+
+/* @media screen and (min-width: 960px) {
+    .imglocation {
+
+        margin-top: 10vw;
+    }
+} */
+/* mt-lg-5 ms-lg-5 pt-lg-3 */
+
+
+.intromov>hr {
+    color: rgb(255, 255, 255);
+    /* border: 4px yellow solid; */
+}
+
+
+.intromov p {
+    color: rgb(148, 148, 148);
+    width: 500px;
+    /* border: 4px rgb(98, 82, 153) solid; */
+}
+
+.actor h2 {
+    color: aliceblue;
+
+}
+
+.actor p {
+    /* border: 5px solid sandybrown; */
+    color: aliceblue;
+
+}
+
+.actor h5 {
+    color: gray;
+    font-size: 16px;
+}
+
+.actorunder p {
+    margin-bottom: -1px;
+}
+
+
+.othermovie div {
+    /* border: 2px salmon solid; */
+    padding-bottom: 20px;
+    margin-left: -10px;
+}
+
+.enternflix {
+    background: linear-gradient(to left, rgb(22, 22, 22) 5%, rgba(44, 44, 44, 1) 60%);
+    height: 60px;
+    position: relative;
+    bottom: 80px;
+    color: aliceblue;
+    box-shadow: 0 0 30px rgb(20, 20, 20);
+    ;
+}
+
+.enternflix img {
+    width: 60px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.enternflix p {
+    margin-top: 16px;
+}
+
+.enternflix a {
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.enternflixsm {
+    background: linear-gradient(to left, rgb(22, 22, 22) 5%, rgba(44, 44, 44, 1) 60%);
+    box-shadow: 0 0 30px rgb(20, 20, 20);
+    height: 100px;
+    color: aliceblue;
+}
+
+.enternflixsm img {
+    width: 80px;
+    height: 65px;
+    margin-top: 15px;
+
+}
+
+.enternflixsm p {
+    margin-top: 15px;
+}
+
+.enternflixsm a {
+    height: 35px;
+    margin-top: 10px;
+    margin-right: 30px;
+    position: relative;
+    left: -90px;
+    top: 35px;
+}

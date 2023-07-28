@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    width: 100%;
+    height: 100%
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+.videoContainer {
+    /* border: 3px sandybrown solid; */
+    position: relative;
+    margin-bottom: -10px;
+    z-index: 11;
+}
+
+
+#mainNavbar {
+    background-color: #DECCCC;
+    box-shadow: 0 2px 5px rgb(140, 116, 116);
+    position: sticky;
+    z-index: 10;
+    top: 0px;
+
+}
+
+#mainNavbar img {
+    width: 80px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+
+#mainNavbar img:hover {
+    width: 80px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    transform: rotate(-2deg) scale(1.15);
+}
+
+#navLinks a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#navLinks a:hover {
+    color: rgb(14, 14, 210);
+    font-weight: bold;
+}
+
+
+#footerContainer {
+    height: 300px;
+    background-color: #DECCCC;
+    /* border: 5px sandybrown solid; */
+}
+
+#footerContainer hr {
+    color: rgb(255, 255, 255);
+    border: 1px white solid;
+
+}
+
+#footerContainer .footerlogo {
+    /* border: 3px saddlebrown solid; */
+    height: 45%;
+    justify-content: center;
+    width: 100%;
+}
+
+.footerlogo>img {
+    width: 200px;
+    height: 100px;
+}
+
+.footercontect {
+    justify-content: center;
+}
+
+.footercontect a {
+    width: 40px;
+    /* border: 2px seagreen solid; */
+
+}
+
+.footercontect i {
+    font-size: 2rem;
+    /* border: 3px salmon solid; */
+    color: aliceblue;
+}
+
+.ourcompany {
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+
+.ourcompany span {
+    color: rgb(51, 101, 238);
+    font-weight: bolder;
+    width: 100%;
+}
+
+
+
+
+.title {
+    text-align: center;
+    padding: 8px;
+    font-size: 20px;
+    background: #8b4040b3;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    border: 1px #f2e6e6 solid;
+    box-shadow: 0px 2px 8px 1px rgb(0 0 0 / 15%);
+}
+
+.diaimgs {
+    /* border: 1px black solid; */
+    width: 150px;
+    margin-left: 40px;
+    margin-top: -70px;
+    padding-bottom: 10px;
+
+}
+
+.content {
+    /* border: 3px salmon solid; */
+    display: inline-block;
+    padding: 50px 8px;
+    line-height: 2;
+}
+
+.buttons {
+    /* 加上這兩個CSS，可以讓button移動到對話框下方。 */
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    display: inline-block;
+    text-align: right;
+    padding: 8px 14px;
+    /* border: 3px black solid; */
+}
+
+.okBtn {
+    position: relative;
+    display: inline-block;
+    background: #8b4040b3;
+    color: #ffffffeb;
+    border-radius: 8px;
+    border: 1px solid white;
+    padding: 4px 8px;
+    cursor: pointer;
+    /* bottom: 0px;
+    top: -50px;
+    right: 5px; */
+}
+
+
+
+#text {
+    margin-top: 5px;
+    /* border: 3px rgb(54, 231, 163) solid; */
+}
+
+.leader {
+    /* border: 3px rgb(54, 231, 163) solid; */
+    display: flex;
+    justify-content: center;
+}
+
+
+.piccontainer1 {
+
+    grid-area: pic1;
+    margin: 5px;
+}
+
+.piccontainer2 {
+
+    grid-area: pic2;
+    margin: 5px;
+}
+
+.piccontainer3 {
+
+    grid-area: pic3;
+    margin: 5px;
+}
+
+.piccontainer4 {
+
+    grid-area: pic4;
+    margin: 5px;
+}
+
+.piccontainer4 img {
+
+    grid-area: pic4;
+    margin-top: 50px;
+}
+
+
+.piccontainer5 {
+
+    grid-area: pic5;
+    margin: 5px;
+}
+
+.piccontainer6 {
+
+    grid-area: pic6;
+    margin: 5px;
+}
+
+.piccontainer7 {
+
+    grid-area: pic7;
+    margin: 5px;
+}
+
+.piccontainer8 {
+
+    grid-area: pic8;
+    margin: 5px;
+}
+
+.piccontainer9 {
+
+    grid-area: pic9;
+    margin: 5px;
+}
+
+.cheer_member {
+    width: 992px;
+    /* border: 5px solid rgb(228, 27, 5); */
+    display: grid;
+    grid-template-areas:
+        'pic1  pic4 pic4 pic2 pic3 pic5'
+        'pic6  pic4 pic4 pic7 pic8 pic9';
+}
+
+
+.cheer_member div {
+    background-color: rgb(255, 254, 237);
+}
+
+
+
+.cheer_member img {
+    width: 150px;
+    /* border: 4px slateblue solid; */
+    margin-top: -20px;
+}
+
+.cheer_member2 {
+    width: 992px;
+    /* border: 5px solid rgb(228, 27, 5); */
+    display: grid;
+    grid-template-areas:
+        'pic1 pic2 pic3 pic4 pic4 pic5'
+        'pic6 pic7 pic8 pic4 pic4 pic9';
+}
+
+.cheer_member2 div {
+    background-color: rgb(255, 233, 233);
+}
+
+
+.cheer_member2 img {
+    width: 150px;
+    /* border: 4px slateblue solid; */
+    margin-top: -20px;
+}
+
+.cheer_member3 {
+    width: 992px;
+    /* border: 5px solid rgb(228, 27, 5); */
+    display: grid;
+    grid-template-areas:
+        'pic1  pic4 pic4 pic2 pic3 pic5'
+        'pic6  pic4 pic4 pic7 pic8 pic9';
+}
+
+.cheer_member3 div {
+    background-color: rgb(201, 224, 255);
+}
+
+
+.cheer_member3 img {
+    width: 150px;
+    /* border: 4px slateblue solid; */
+    margin-top: -20px;
+}
+
+.cheer_member4 {
+    width: 992px;
+    /* border: 5px solid rgb(228, 27, 5); */
+    display: grid;
+    grid-template-areas:
+        'pic1 pic2 pic3 pic4 pic4 pic5'
+        'pic6 pic7 pic8 pic4 pic4 pic9';
+}
+
+.cheer_member4 div {
+    background-color: #fff0fe;
+}
+
+
+.cheer_member4 img {
+    width: 150px;
+    /* border: 4px slateblue solid; */
+    margin-top: -20px;
+}
+
+
+.cheer_member5 {
+    width: 992px;
+    /* border: 5px solid rgb(228, 27, 5); */
+    display: grid;
+    grid-template-areas:
+        'pic1 pic4 pic4 pic2 pic3 pic5'
+        'pic6 pic4 pic4 pic7 pic8 pic9';
+}
+
+.cheer_member5 div {
+    background-color: rgb(255, 233, 214);
+}
+
+
+
+.cheer_member5 img {
+    width: 150px;
+    /* border: 4px slateblue solid; */
+    margin-top: -20px;
+}
+
+
+
+.jojo {
+    display: inline-block;
+    /* border: solid red 3px; */
+    position: relative;
+    bottom: -40px;
+    left: 20px;
+
+}
+
+.jojo p {
+    font-weight: bold;
+    color: rgb(82, 42, 42)
+}
+
+
+.balllogo {
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+    background-color: #290b0b;
+    
+}
+
+.balllogo:hover {
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    box-shadow: 0 0 6px #290b0b;
+    
+}
+
+#balllogotop {
+    margin-top: 10px;
+}
+
+#balllogobottom {
+    margin-bottom: 10px;
+}
+
+.balllogo p {
+    padding-top: 15px;
+    padding-left: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+.balllogo img {
+    margin-left: auto;
+    /* border: 3px rgb(240, 80, 88) solid; */
+    width: 80px;
+    padding-right: 30px;
+    margin-top: 8px;
+    height: 40px;
+}
+.balllogo:hover img{
+    width: 120px;
+    height: 60px;
+    padding-right: 20px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .leader {
+        /* border: 3px rgb(54, 231, 163) solid; */
+        display: none;
+        justify-content: center;
+    }
+
+    .cheer_member {
+        width: 992px;
+        /* border: 5px solid rgb(228, 27, 5); */
+        display: block;
+    }
+
+    .cheer_member2 {
+        width: 992px;
+        /* border: 5px solid rgb(228, 27, 5); */
+        display: block;
+    }
+
+    .cheer_member3 {
+        width: 992px;
+        /* border: 5px solid rgb(228, 27, 5); */
+        display: block;
+    }
+
+    .cheer_member4 {
+        width: 992px;
+        /* border: 5px solid rgb(228, 27, 5); */
+        display: block;
+    }
+
+    .cheer_member5 {
+        width: 992px;
+        /* border: 5px solid rgb(228, 27, 5); */
+        display: block;
+    }
+
+    .piccontainer4 img {
+        margin-top: 20px;
+        width: 150px;
+    }
+
+    .dialog {
+        display: none;
+        width: 666px;
+        height: 260px;
+        box-shadow: 5px 5px 10px black;
+        border-radius: 20px;
+        position: fixed;
+        background-color: white;
+        z-index: 16;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .cheer_member div:hover {
+        background-color: rgb(255, 233, 233);
+        box-shadow: 0 0 12px rgb(255, 207, 207);
+        scale: 1.01;
+    }
+
+    .cheer_member2 div:hover {
+        background-color: rgb(201, 224, 255);
+        box-shadow: 0 0 12px rgb(255, 207, 207);
+        scale: 1.01;
+    }
+
+    .cheer_member3 div:hover {
+        background-color: rgb(255, 233, 233);
+        box-shadow: 0 0 12px rgb(255, 207, 207);
+        scale: 1.01;
+    }
+
+    .cheer_member4 div:hover {
+        background-color: rgb(201, 224, 255);
+        box-shadow: 0 0 12px rgb(255, 207, 207);
+        scale: 1.01;
+    }
+
+    .cheer_member5 div:hover {
+        background-color: rgb(255, 233, 233);
+        box-shadow: 0 0 12px rgb(255, 207, 207);
+        scale: 1.01;
+    }
+
+    .modals {
+        position: absolute;
+        z-index: 12;
+        width: 100%;
+        height: 100%;
+        background: #2e2e2ea6;
+    }
+
+    .dialog {
+        width: 666px;
+        height: 260px;
+        box-shadow: 5px 5px 10px black;
+        border-radius: 20px;
+        position: fixed;
+        background-color: white;
+        z-index: 16;
+    }
+
+    .dialog a {
+        text-decoration-line: none;
+    }
+}

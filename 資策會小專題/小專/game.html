@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小遊戲</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+
+
+<body>
+    <div class="videoContainer">
+        <video class="w-100" src="./video/全部遮罩2.mp4" autoplay muted loop></video>
+    </div>
+    <nav id="mainNavbar" class="navbar navbar-expand-md">
+        <a href="" class="nav-brand"><img src="../小專/375px-CPBL_logo.svg.png" class="ms-3 ms-md-5" alt=""></a>
+        <button class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navLinks">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse me-5 ms-3 ms-md-0" id="navLinks">
+            <ul class="navbar-nav  mt-0 ms-auto">
+                <li class="navbar-item pe-3  fs-5"><a href="../index.html" target="_blank" class="nav-link">熱門文章</a>
+                </li>
+                <li class="navbar-item pe-3 fs-5"><a href="./baseball_position.html" target="_blank"
+                        class="nav-link">各隊主場</a></li>
+                <li class="navbar-item pe-3 fs-5"><a href="./cheer_member copy.html" target="_blank"
+                        class="nav-link">成員介紹</a></li>
+                <li class="navbar-item pe-3 fs-5"><a href="#here" class="nav-link">小遊戲</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="containerfluid" id="here">
+        <div class="backgroundimg justify-content-center">
+            <img src="./game圖片素材含人/gamename.gif" alt="" class="gamename">
+            <button class="gamestart btn btn-danger" type="button">開始遊戲</button>
+            <div class="showgame"></div>
+            <img class="model img-fluid" id="model" src="./game圖片素材含人/modelwhite.png" alt="">
+            <img class="bg" src="./game圖片素材含人/background.png" alt="">
+            <div class="wear">
+                <img src="./game圖片素材/drasswhile.png" alt="" class="img-fluid drass wearall" onclick="changeWeardrass()">
+                <img src="./game圖片素材/Jumpsuitwhite.png" alt="" class="img-fluid jumpsuit wearall"
+                    onclick="changeWearSuit()">
+                <img src="./game圖片素材/skirtwhite.png" alt="" class="img-fluid skirt wearall" onclick="changeWearSkirt()">
+            </div>
+
+            <div class="colorchoose">
+                <div class="colorselect while" onclick="whiteColor()"></div>
+                <div class="colorselect blue" onclick=" BlueColor() "></div>
+                <div class="colorselect green" onclick=" GreenColor()"></div>
+                <div class="colorselect perple" onclick=" PerpleColor() "></div>
+                <div class="colorselect yellow" onclick=" YellowColor()"></div>
+            </div>
+
+            <div class="reset" onclick="Reset()"><img src="./game圖片素材含人/reset2.png" alt="" class="imgfluid"></div>
+        </div>
+
+
+    </div>
+
+    <footer id="footerContainer">
+        <div class="footerlogo d-flex"><img src="./375px-CPBL_logo.svg.png" class="mt-3" alt=""></div>
+        <div class="footercontect d-flex ">
+            <a href="mailto:eason100203@gmail.com"><i class="bi bi-chat-text"></i></a>
+            <a href="tel:+886-2-3278918"><i class="bi bi-whatsapp"></i></a>
+            <a href=""><i class="bi bi-messenger"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+        </div>
+        <br>
+        <hr>
+        <div class="ourcompany mt-4">
+            <p>© Copyright(C) 2023 <span>CPBLGIRLS.</span> ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+    <script src="game.js"></script>
+</body>
+
+</html>

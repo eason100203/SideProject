@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>熱門文章</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .videoContainer {
+            /* border: 3px sandybrown solid; */
+            position: relative;
+            margin-bottom: -10px;
+        }
+
+
+        #mainNavbar {
+            background-color: #DECCCC;
+            box-shadow: 0 2px 5px rgb(140, 116, 116);
+            position: sticky;
+            z-index: 9999;
+            top: 0px;
+
+        }
+
+        #mainNavbar img {
+            width: 80px;
+            margin-bottom: 10px;
+            margin-left: 60px;
+        }
+
+        #mainNavbar img:hover {
+            width: 80px;
+            margin-bottom: 10px;
+            margin-left: 60px;
+            transform: rotate(-2deg) scale(1.15);
+        }
+
+        #navLinks a {
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+
+        #navLinks a:hover {
+            color: rgb(14, 14, 210);
+            font-weight: bold;
+        }
+
+
+
+
+
+        .page_article:nth-of-type(1) {
+            margin-top: 60px;
+        }
+
+        .mainimg {
+            padding: 0;
+        }
+
+        .mainimg img {
+            padding: 0;
+            border-radius: 5px;
+        }
+
+        .mainarticle {
+            /* border: 2px salmon solid;  */
+            text-align: left;
+        }
+
+        .maincontent a {
+            text-decoration: none;
+            color: black;
+            margin: 40px 0 150px 0;
+            /* border: 3px saddlebrown solid; */
+        }
+
+
+        #page4 {
+            margin-bottom: 30px;
+        }
+
+        @media screen and (max-width:768px) {
+
+            .maincontent a {
+                margin: -40px -10px -30px -10px;
+                box-shadow: -4px 3px 10px rgb(253, 234, 234);
+
+            }
+
+            .maincontent a:nth-child(even) {
+                background-color: rgb(255, 236, 236);
+
+            }
+
+            #page4 {
+                margin-bottom: 20px;
+            }
+
+        }
+
+
+        @media screen and (min-width:768px) {
+
+            .page_article {
+                margin: 60px -10px;
+                border-radius: 5px;
+
+
+            }
+
+            .page_article:hover {
+
+                margin: 60px -10px;
+                border-radius: 5px;
+                box-shadow: 0px 3px 7px rgb(208, 173, 173);
+                background-color: rgb(255, 242, 242);
+                scale: 1.008;
+            }
+
+        }
+
+        .tryit span {
+            font-size: 14px;
+            color: rgb(185, 185, 185);
+        }
+
+        .mainarticle h3 {
+            /* border: 2px salmon solid;  */
+            text-align: left;
+            padding: 0 30px;
+            color: rgb(16, 16, 183);
+            font: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .mainarticle p {
+            text-align: left;
+            padding: 0 30px;
+            padding-top: 15px;
+            color: rgb(72, 72, 72);
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+            overflow: hidden;
+        }
+
+
+        #footerContainer {
+            height: 300px;
+            background-color: #DECCCC;
+            /* border: 5px sandybrown solid; */
+        }
+
+        #footerContainer hr {
+            color: rgb(255, 255, 255);
+            border: 1px white solid;
+
+        }
+
+        #footerContainer .footerlogo {
+            /* border: 3px saddlebrown solid; */
+            height: 45%;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .footerlogo>img {
+            width: 200px;
+            height: 100px;
+        }
+
+        .footercontect {
+            justify-content: center;
+        }
+
+        .footercontect a {
+            width: 40px;
+            /* border: 2px seagreen solid; */
+
+        }
+
+        .footercontect i {
+            font-size: 2rem;
+            /* border: 3px salmon solid; */
+            color: aliceblue;
+        }
+
+        .ourcompany {
+            color: #ffffff;
+            text-align: center;
+            width: 100%;
+        }
+
+        .ourcompany span {
+            color: rgb(51, 101, 238);
+            font-weight: bolder;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="videoContainer">
+        <video class="w-100" src="./小專/video/全部遮罩2.mp4" autoplay muted loop></video>
+    </div>
+    <nav id="mainNavbar" class="navbar navbar-light navbar-expand-md">
+        <a href="" class="nav-brand"><img src="./小專/375px-CPBL_logo.svg.png" class="ms-3 ms-md-5" alt=""></a>
+        <button class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navLinks">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse me-5 ms-3 ms-md-0" id="navLinks">
+            <ul class="navbar-nav  mt-0 ms-auto">
+                <li class="navbar-item pe-3 fs-5"><a href="#linkarticle" class="nav-link">熱門文章</a></li>
+                <li class="navbar-item pe-3 fs-5"><a href="./小專/baseball_position.html" target="_blank"
+                        class="nav-link">各隊主場</a>
+                </li>
+                <li class="navbar-item pe-3 fs-5"><a href="./小專/cheer_member copy.html" target="_blank"
+                        class="nav-link">成員介紹</a></li>
+                <li class="navbar-item pe-3 fs-5"><a href="./小專/game.html" class="nav-link" target="_blank">小遊戲</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid maincontent" id="linkarticle">
+        <a target="_blank" href="https://sports.ltn.com.tw/news/breakingnews/427  1168" class="d-block mx-md-2">
+            <div class="page_article section_one row align-items-center">
+                <div class="col-12 col-md-6 mainarticle py-3 p-md-0">
+                    <div class="tryit">
+                        <H3>李多慧熱潮讓「本質迷」不開心？粉專曝南韓經紀人親自發聲了</H3>
+                        <P>〔體育中心／綜合報導〕南韓啦啦隊女神李多慧跨海加盟樂天女孩，昨天在對上味全龍的賽事獻出在台灣應援首秀，有臉書粉專分享昨晚現場照片，只見三壘測觀眾席人山人海，大家全舉著手機狂拍啦啦隊，
+                            場面壯觀，只是也引發真心想看棒球的「本質球迷」不開心...<span>(繼續閱讀)</span>
+                        </P>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mainimg"><img src="./小專/球員/李多慧新聞.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </a>
+
+
+        <a href="https://tw.stock.yahoo.com/news/%E6%9E%97%E8%A5%84%E6%9B%AC%E5%A5%BD%E8%BA%AB%E6%9D%90%E7%BE%8E%E7%85%A7-%E7%9B%B4%E6%92%AD%E6%94%B66%E8%90%AC6%E6%8A%96%E5%85%A7%E6%BF%80%E5%8B%95%E7%8B%82%E5%8F%AB-053249630.html"
+            target="_blank" class="d-block mx-md-2">
+            <div class=" page_article section_two row align-items-center">
+                <div class="col-12 col-md-6 mainarticle order-md-2 py-3 p-md-0">
+                    <div class="tryit">
+
+                        <H3>林襄曬好身材美照！直播收6萬6抖內激動狂叫</H3>
+                        <P>〔NOWnews今日新聞〕樂天女孩林襄擁有精緻五官、E級火辣身材，IG坐擁166萬人追蹤，是許多人心目中的啦啦隊女神，甚至紅到日本去，獲封「流量密碼」、「異次元等級正妹」，一舉一動深受關注。昨（18）日
+                            林襄在直播中突然收到粉絲抖內的豪華禮物「帝王贈」...<span>(繼續閱讀)</span>
+                        </P>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mainimg order-md-1"><img src="./小專/球員/林襄新聞2.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </a>
+
+        <a href="https://ent.ltn.com.tw/news/breakingnews/4275604" target="_blank" class="d-block  mx-md-2">
+            <div class=" page_article section_three row align-items-center">
+                <div class="col-12 col-md-6 mainarticle py-3 p-md-0">
+                    <div class="tryit">
+                        <H3>峮峮生日遭「奶油毀容」瀏海變條碼！崩壞模樣曝光</H3>
+                        <P>〔娛樂頻道／綜合報導〕中信兄弟啦啦隊女神「峮峮」吳函峮今（19日）迎來33歲生日，昨天隊友們已先替她溫馨暖壽，今天再收到各方祝福，還慘遭「KID」林柏昇「洗臉」
+                            ，奶油砸得滿臉都是，招牌瀏海慘變樣...<span>(繼續閱讀)</span></P>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mainimg "><img src="./小專/球員/峮峮新聞2.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </a>
+
+
+        <a href="https://www.nownews.com/news/6109740" target="_blank" class="d-block mx-md-2" id="page4">
+            <div class="page_article section_four row align-items-center">
+                <div class="col-12 col-md-6 mainarticle order-md-2 py-3 p-md-0">
+                    <div class="tryit">
+                        <H3>慈妹Cosplay「您的小護士上線」!萬人淪陷：需要急救</H3>
+                        <P>〔娛樂頻道／綜合報導〕職棒富邦悍將、職籃富邦勇士啦啦隊「Fubon Angels」25歲成員慈妹（本名彭翊慈），近來一段應援影片被PTT鄉民形容「沒看還好，一看驚為天人」，
+                            指有威脅啦啦隊一姊林襄地位之虞，讓她受到不小討論及關注...<span>(繼續閱讀)</span></P>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mainimg order-md-1"><img src="./小專/球員/慈妹新聞.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <footer id="footerContainer">
+        <div class="footerlogo d-flex"><img src="./小專/375px-CPBL_logo.svg.png" class="mt-3" alt=""></div>
+        <div class="footercontect d-flex ">
+            <a href="mailto:eason100203@gmail.com"><i class="bi bi-chat-text"></i></a>
+            <a href="tel:+886-2-3278918"><i class="bi bi-whatsapp"></i></a>
+            <a href=""><i class="bi bi-messenger"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+        </div>
+        <br>
+        <hr>
+        <div class="ourcompany mt-4">
+            <p>© Copyright(C) 2023 <span>CPBLGIRLS.</span> ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
