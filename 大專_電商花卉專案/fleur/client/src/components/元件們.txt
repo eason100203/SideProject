@@ -1,0 +1,27 @@
+所有classes的型態都是字串或陣列
+    只添加一個class可以只用字串
+    添加兩個以上class用陣列
+
+FleurList
+ul+li組合
+    classes: 添加class( {ul: , li: } )
+    items: li的內容( {txt: , link: } )
+           用link屬性帶超連結，加了會在li裡面有<a href>
+
+FleurCard
+figure+img+figcaption組合
+    classes: 添加class( {card: , image: , inner: } )
+    imgSrc: 圖片src
+    imgAlt: 圖片alt
+    inner: figcaption的內容
+    link: 圖片帶超連結
+
+InfoBar
+會員頁的Bar
+
+memberNav
+會員頁的Nav
+
+memberContainer
+會員頁的Nav+Bar含390px完整版
+

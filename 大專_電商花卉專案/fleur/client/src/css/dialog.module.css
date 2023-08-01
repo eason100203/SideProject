@@ -1,0 +1,35 @@
+.dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #000000aa;
+    z-index: 9999;
+}
+
+.dialog__main {
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40vw;
+    height: 30vh;
+    background-color: #fff;
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.dialog__title {
+    font-size: 1.5rem;
+}
+
+.dialog__btn {
+    align-self: flex-end;
+    padding: 0 1.5rem;
+    font-size: 1.2rem;
+    background-color: #fff;
+    cursor: pointer;
+}

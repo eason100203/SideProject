@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+    box-sizing: border-box;
+}
+
+/* 花BAR */
+
+header {
+    position: relative;
+    height: 200px;
+    background-image: url('./historybg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+h2 {
+    flex: none;
+    font-size: 48px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: rgba(217, 217, 217, 1);
+    padding-top: 50px;
+}
+
+.cart--overlay {
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(10, 10, 10, 0.4);
+
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav li span {
+    padding-left: 5px;
+}
+
+
+.carts {
+    position: relative;
+    top: 35px;
+}
+
+.carts__numbercart {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 55px;
+    height: 30px;
+}
+
+.carts__number {
+    flex: auto;
+    font-size: 25px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bold;
+    color: rgba(217, 217, 217, 1);
+
+}
+
+/* ----------------------------------------------------------------------- */
+body {
+    height: 1600px;
+    margin: auto;
+}
+
+.display {
+    margin: 100px auto 0;
+    max-width: 1440px;
+    padding-left: 220px;
+    padding-right: 220px;
+    /* border: 2px solid red; */
+}
+
+/* ----------------------------------------------------- */
+
+#historyItems {
+    display: flex;
+    /* border: 2px rgb(231, 253, 178) solid; */
+    justify-content: space-between;
+}
+
+#historyItems a {
+    text-decoration: none;
+}
+
+
+.borderLink {
+    border-bottom: 1px solid #4C4844;
+}
+
+
+#historyItems li {
+    border-bottom: 1px rgb(255, 255, 255) solid;
+    list-style: none;
+    font-size: 1.8rem;
+    color: #4C4844;
+}
+
+/* --------------------------------------------------- */
+
+hr {
+    margin-top: 1.5rem;
+}
+
+
+.line {
+    background-color: #4C4844;
+    opacity: 30%;
+    height: 1px;
+    border: none;
+    /* width: 1000px; */
+    margin-top: 2vw;
+}
+
+.titleBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 1.8rem;
+    margin-top: 100px;
+    color: #4C4844;
+    /* border: 1px solid red; */
+}
+
+.titleArea1 {
+    text-align: left;
+}
+
+#border {
+    /* border: 1px solid black; */
+    border-radius: 5px;
+}
+
+.titleArea2 {
+    text-align: center;
+    margin-right: 25px;
+}
+
+.titleArea3 {
+    text-align: center;
+    margin-left: 55px;
+}
+
+.titleArea4 {
+    text-align: right;
+}
+
+.memberList {
+    margin: 3vw 0 0 0vw;
+    font-size: 1.5rem;
+    color: #4C4844;
+}
+
+.reviseBlockAll {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.5rem;
+    margin-top: 3vw;
+}
+
+.reviseBlockPart1 {
+    margin-right: 2.5vw;
+}
+
+.reviseBlockPart2 {
+    margin-left: 2.5vw;
+}
+
+.inputText {
+    border: none;
+    border-bottom: solid 1px rgb(184, 184, 184);
+    border-bottom-width: 100%;
+    margin-top: 2vw;
+    font-size: 1.5rem;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+input::placeholder {
+    color: #D9D9D9;
+    font-size: 1.5rem;
+}
+
+
+.inputTextInline {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.test {
+    border: 5px solid red;
+}
+
+#ok {
+    background-color: white;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    height: 5vw;
+    margin-top: 5vw;
+    cursor: pointer;
+}
+
+.select {
+    width: 100%;
+    height: 100%;
+    margin: 1vw 0 1vw 0;
+    border: none;
+    border-bottom: 1px solid #D9D9D9;
+    font-size: 1.5rem;
+    color: #D9D9D9;
+}
+
+.select2 {
+    width: 100%;
+    height: 100%;
+    margin: 1vw 0 1vw 0;
+    border: none;
+    border-bottom: 1px solid #D9D9D9;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+select>option {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.select::selection {
+    color: black;
+}
+
+
+@media screen and (max-width: 390px) {}

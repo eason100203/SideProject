@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>優惠券</title>
+  <link rel="stylesheet" href="../public/css/coupon.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="cart--overlay"></div>
+    <nav>
+      <h2>LOGO</h2>
+      <ul>
+        <div class="carts">
+          <!--購物車圖示-->
+          <svg width="55" viewBox="0 0 69 76" fill="none" xmlns="http://www.w3.org/2000/svg" id="carticon">
+            <path d="M6.14132 27.3774C6.28967 25.5471 7.83115 24.1367 9.68326 24.1367H59.0898C60.9421 24.1367 62.4836 25.5471 62.6318 27.3774L65.7498 65.8461C66.0821 69.9467 62.8155 73.4561 58.6659 73.4561H10.1071C5.95779 73.4561 2.69092 69.9467 3.0233 65.8461L6.14132 27.3774Z" stroke="#D9D9D9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M48.6005 34.7053V17.0912C48.6005 9.30886 42.2368 3 34.3871 3C26.5372 3 20.1737 9.30886 20.1737 17.0912V34.7053" stroke="#D9D9D9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+          <div class="carts__numbercart">
+            <!--購物車圖示內數字-->
+            <div id="number-box" class="carts__number"><span>0</span></div>
+          </div>
+        </div>
+
+      </ul>
+    </nav>
+  </header>
+
+
+  <main class="main">
+    <ul id="historyItems">
+      <a href="">
+        <li>個人資料</li>
+      </a>
+      <a href="">
+        <li>訂單查詢</li>
+      </a>
+      <a href="">
+        <li>折價券</li>
+      </a>
+      <a href="">
+        <li>收藏清單</li>
+      </a>
+    </ul>
+
+    <hr>
+
+    <ul class="nav">
+      <li class="nav__item"><a href="">代領用(0)</a></li>
+      <li class="nav__item"><a href="">已使用(0)</a></li>
+      <li class="nav__item"><a href="">可使用(1)</a></li>
+      <li class="nav__item"><a href="">無效(12)</a></li>
+    </ul>
+    <section class="couponContainer">
+      <div class="coupon">
+        <div class="coupon__main">
+          <p class="coupon__discount">NT.300</p>
+          <div class="coupon__description">
+            <p class="coupon__title">周年慶</p>
+            <p class="coupon__condition">結帳滿1000元可折扣</p>
+            <div class="coupon__codeAndTime">
+              <p>代碼：PT300T240630</p>
+              <p>有效期限：即日起至2024/06/30</p>
+            </div>
+          </div>
+        </div>
+        <p class="coupon__howToUseTrigger">使用辦法</p>
+      </div>
+      <div class="coupon">
+        <div class="coupon__main">
+          <p class="coupon__discount">95折</p>
+          <div class="coupon__description">
+            <p class="coupon__title">生日禮</p>
+            <p class="coupon__condition">結帳滿1000元可折扣</p>
+            <div class="coupon__codeAndTime">
+              <p>代碼：PP95T230731</p>
+              <p>有效期限：即日起至2023/07/31</p>
+            </div>
+          </div>
+        </div>
+        <p class="coupon__howToUseTrigger">使用辦法</p>
+      </div>
+      <div class="coupon">
+        <div class="coupon__main">
+          <p class="coupon__discount">NT.20</p>
+          <div class="coupon__description">
+            <p class="coupon__title">小小禮</p>
+            <p class="coupon__condition">結帳滿500元可折扣</p>
+            <div class="coupon__codeAndTime">
+              <p>代碼：PT20T240630</p>
+              <p>有效期限：即日起至2024/06/30</p>
+            </div>
+          </div>
+        </div>
+        <p class="coupon__howToUseTrigger">使用辦法</p>
+      </div>
+    </section>
+  </main>
+  <dialog class="howToUse">
+    <div class="howToUse__closeBtn"></div>
+    <div class="howToUse__main">
+      <p class="howToUse__title">周年慶</p>
+      <div class="howToUse__description">
+        <p class="howToUse__subTitle">使用門檻</p>
+        <p class="howToUse__text">單筆消費滿1000元即可使用</p>
+      </div>
+      <div class="howToUse__description">
+        <p class="howToUse__subTitle">可用範圍</p>
+        <p class="howToUse__text">全部商品</p>
+      </div>
+      <div class="howToUse__description">
+        <p class="howToUse__subTitle">活動說明</p>
+        <p class="howToUse__text">即日起至2024/06/30購買全部商品單筆消費滿1000元即可使用</p>
+      </div>
+      <div class="howToUse__description">
+        <p class="howToUse__subTitle">使用規則</p>
+        <p class="howToUse__text">即日起至2024/06/30購買全部商品單筆消費滿1000元即可使用</p>
+      </div>
+    </div>
+  </dialog>
+  <dialog class="howToUse">
+    <div class="howToUse__closeBtn"></div>
+    <div class="howToUse__main">
+      <p class="howToUse__title">周年慶</p>
+      <div class="howToUse__description">
+        <p class="howToUse__subTitle">使用門檻</p>
+        <p class="howToUse__text">單筆消費滿1000元即可使用</p>
+      </div>
+      <div class="howToUse__description">
+        <p class="howToUse__subTitle">可用範圍</p>
+        <p class="howToUse__text">全部商品</p>
+      </div>
+      <div class="howToUse__description">
+        <p class="howToUse__subTitle">活動說明</p>
+        <p class="howToUse__text">即日起至2024/06/30購買全部商品單筆消費滿1000元即可使用</p>
+      </div>
+      <div class="howToUse__description">
+        <p class="howToUse__subTitle">使用規則</p>
+        <p class="howToUse__text">即日起至2024/06/30購買全部商品單筆消費滿1000元即可使用</p>
+      </div>
+    </div>
+  </dialog>
+  <dialog class="howToUse">
+    <div class="howToUse__closeBtn"></div>
+    <div class="howToUse__main">
+      <p class="howToUse__title">周年慶</p>
+      <div class="howToUse__description">
+        <p class="howToUse__subTitle">使用門檻</p>
+        <p class="howToUse__text">單筆消費滿1000元即可使用</p>
+      </div>
+      <div class="howToUse__description">
+        <p class="howToUse__subTitle">可用範圍</p>
+        <p class="howToUse__text">全部商品</p>
+      </div>
+      <div class="howToUse__description">
+        <p class="howToUse__subTitle">活動說明</p>
+        <p class="howToUse__text">即日起至2024/06/30購買全部商品單筆消費滿1000元即可使用</p>
+      </div>
+      <div class="howToUse__description">
+        <p class="howToUse__subTitle">使用規則</p>
+        <p class="howToUse__text">即日起至2024/06/30購買全部商品單筆消費滿1000元即可使用</p>
+      </div>
+    </div>
+  </dialog>
+  <script src="../public/js/coupon.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,437 @@
+.allBackground {
+    position: relative;
+    background: url("http://localhost:3001/public/images/nightphoto.png") center center no-repeat;
+    min-height: 600px;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1002;
+}
+
+.changeColor {
+    color: aliceblue
+}
+
+.changeColor2 {
+    color: aliceblue;
+    font-size: 1.6vw;
+}
+
+.talkContainer {
+    position: relative;
+    text-align: center;
+    /* border: 2px solid rgb(29, 99, 173); */
+    height: 100vh;
+}
+
+
+.talkContainer2 {
+    position: relative;
+    text-align: center;
+    /* border: 2px solid rgb(214, 39, 112); */
+    height: 60vh;
+}
+
+
+.talkMain2 {
+    position: absolute;
+    top: 0;
+    left: 10vw;
+    /* border: 2px sandybrown solid; */
+    width: 80vw;
+    height: 100vh;
+    /* transform: rotateX(180deg); */
+    /* margin-top: -80px; */
+    z-index: 5;
+    animation-name: talkMainLeft;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+    transform-origin: 50% 100%;
+    opacity: 0;
+}
+
+
+
+.talkMain3 {
+    position: absolute;
+    left: 0vw;
+    /* border: 2px sandybrown solid; */
+    width: calc(100vw - 18px);
+    min-height: 100vh;
+    margin-top: -15vh;
+}
+
+.talkMain {
+    position: absolute;
+    left: 10vw;
+    width: 80vw;
+    height: 115vh;
+    /* border: 2px solid rgb(183, 27, 214); */
+    /* transform: rotateX(180deg); */
+    margin-top: -11vh;
+
+}
+
+.talkBranchLeft {
+    position: absolute;
+    top: 40vh;
+    height: 40vh;
+    left: 15vw;
+    width: 35vw;
+    /* border: 2px solid rgb(186, 22, 183); */
+    z-index: 2;
+    animation-name: talkMainLeft;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+    transform-origin: 100% 100%;
+    opacity: 0;
+}
+
+@keyframes talkMainLeft {
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes talkMainRight {
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.talkBranchRight {
+    position: absolute;
+    top: 20vh;
+    height: 40vh;
+    right: 15vw;
+    width: 35vw;
+    /* border: 2px solid rgb(186, 22, 183); */
+    z-index: 2;
+    /* transform: rotate(30deg); */
+    animation-name: talkMainRight;
+    animation-duration: 1s;
+    animation-delay: .7s;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+    transform-origin: 0% 100%;
+    opacity: 0;
+}
+
+
+/* middle true枝幹樣式 */
+
+.talkMidBranchLeft {
+    position: absolute;
+    top: 10vh;
+    height: 40vh;
+    left: 14vw;
+    width: 35vw;
+    /* border: 2px solid rgb(186, 22, 183); */
+    z-index: -1;
+
+}
+
+
+.talkMidBranchRight {
+    position: absolute;
+    top: -20vh;
+    height: 40vh;
+    right: 13vw;
+    width: 35vw;
+    /* border: 2px solid rgb(186, 22, 183); */
+    z-index: -1;
+
+}
+
+
+.talkMidBranchRight2 {
+    position: absolute;
+    top: 50vh;
+    height: 40vh;
+    right: 17vw;
+    width: 30vw;
+    /* border: 2px solid rgb(186, 22, 183); */
+    z-index: -1;
+    transform: rotate(20deg);
+
+}
+
+/* middle true 商品排版 */
+.trueMiddleleftProduct {
+    position: absolute;
+    top: -12vh;
+    height: 40vh;
+    left: 20vw;
+    width: 30vw;
+    z-index: -20;
+}
+
+
+.trueMiddleleftProduct2 {
+    position: absolute;
+    top: 55vh;
+    height: 40vh;
+    left: 20vw;
+    width: 30vw;
+    z-index: -20;
+}
+
+.trueMiddlerightProduct {
+    position: absolute;
+    top: 20vh;
+    height: 40vh;
+    right: 3vw;
+    width: 35vw;
+    z-index: -20;
+}
+
+
+
+/* middle false枝幹樣式 */
+.falsetalkMidBranchLeft {
+    position: absolute;
+    top: -20vh;
+    height: 40vh;
+    left: 14vw;
+    width: 35vw;
+    /* border: 2px solid rgb(186, 22, 183); */
+    z-index: -1;
+}
+
+
+.falsetalkMidBranchLeft2 {
+    position: absolute;
+    top: 45vh;
+    height: 40vh;
+    left: 14vw;
+    width: 35vw;
+    transform: rotateX(180deg);
+    /* border: 2px solid rgb(186, 22, 183); */
+    z-index: -1;
+}
+
+
+
+.falsetalkMidBranchRight {
+    position: absolute;
+    top: 25vh;
+    height: 40vh;
+    right: 13vw;
+    width: 35vw;
+    /* border: 2px solid rgb(186, 22, 183); */
+    z-index: -1;
+    /* transform: rotate(40deg); */
+}
+
+
+.falsetalkMidBranchRight2 {
+    position: absolute;
+    top: 25vh;
+    height: 40vh;
+    right: 13vw;
+    width: 35vw;
+    /* border: 2px solid rgb(186, 22, 183); */
+    z-index: -1;
+    /* transform: rotate(40deg); */
+
+}
+
+
+
+/* middle false商品排版 */
+
+.falseMiddleleftProduct {
+    position: absolute;
+    top: 20vh;
+    height: 40vh;
+    left: 20vw;
+    width: 30vw;
+    z-index: -20;
+}
+
+
+
+.falseMiddlerightProduct {
+    position: absolute;
+    top: -10vh;
+    height: 40vh;
+    right: 3vw;
+    width: 35vw;
+    z-index: -20;
+}
+
+
+.falseMiddlerightProduct2 {
+    position: absolute;
+    top: 50vh;
+    height: 40vh;
+    right: 3vw;
+    width: 35vw;
+    z-index: -20;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.controlPeople {
+    position: relative;
+    height: 100%;
+    /* border: 2px rgb(93, 3, 81) solid; */
+}
+
+.talkBackgroundPeople {
+    /* border: 2px rgb(238, 24, 0) solid; */
+    position: absolute;
+    top: 40%;
+    min-height: 30vh;
+    width: 35vw;
+}
+
+.headerCard {
+    display: flex;
+    width: 35vw;
+    /* border: 2px solid red; */
+    /* transition: .2s linear; */
+    /* height: 100%; */
+    opacity: 0;
+    animation-name: headerCard;
+    animation-delay: 1.2s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes headerCard {
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.headerImg {
+    width: 10vw;
+    /* padding-right: 10px; */
+    box-shadow: 0 0 5px gray;
+    /* border: 2px solid rgb(50, 16, 243); */
+    z-index: 1;
+    aspect-ratio: 1 / 1.2;
+    object-fit: cover;
+}
+
+
+.headInner {
+    margin: 3vh 2vw;
+    text-align: start;
+    font-size: 2vw;
+    width: 15vw;
+    /* border: 2px saddlebrown solid; */
+}
+
+
+
+.leftProduct {
+    position: absolute;
+    top: 20vh;
+    height: 40vh;
+    left: 20vw;
+    width: 30vw;
+    z-index: 1;
+    /* border: 2px solid red; */
+
+}
+
+.rightProduct {
+    position: absolute;
+    top: 45vh;
+    height: 40vh;
+    right: 1vw;
+    width: 35vw;
+    z-index: 1;
+    /* border: 2px solid red; */
+}
+
+
+
+.animation {
+    position: absolute;
+    top: 10vh;
+    height: 40vh;
+    left: 14vw;
+    width: 35vw;
+    /* border: 2px solid rgb(186, 22, 183); */
+    z-index: -1;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .talkBackgroundPeople {
+        /* border: 2px rgb(238, 24, 0) solid; */
+        position: absolute;
+        top: 55%;
+        min-height: 30vh;
+        width: 35vw;
+    }
+
+
+    .headerCard {
+        display: flex;
+        width: 45vw;
+        /* border: 2px solid red; */
+        /* height: 100%; */
+    }
+
+    .headerImg {
+        width: 15vw;
+        /* border: 2px solid rgb(50, 16, 243); */
+    }
+
+    .headInner {
+        margin: 3vh 2vw;
+        text-align: start;
+        font-size: 2vw;
+    }
+
+
+    .leftProduct {
+        position: absolute;
+        top: 32vh;
+        height: 40vh;
+        left: 10vw;
+        width: 30vw;
+        z-index: 1;
+    }
+
+    .rightProduct {
+        position: absolute;
+        top: 40vh;
+        height: 40vh;
+        right: 0;
+        width: 35vw;
+        z-index: 1;
+    }
+
+}

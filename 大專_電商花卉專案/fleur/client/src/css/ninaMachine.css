@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap' );
+
+.all {
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+
+  background-repeat: no-repeat, repeat;
+  /* font-family: ; */
+}
+
+
+
+.container {
+display: flex;
+  height: 640px;
+  width: 703px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  padding-left: 195px;
+  padding-top: 32px;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.img img {
+  height: 640px;
+  width: 703px;
+}
+
+
+
+
+
+.reel {
+  
+  font-family: 'Josefin Sans', sans-serif;
+  height: 135px;
+  width: 98px;
+  font-size: 60px;
+  overflow: hidden;
+  color: rgba(250, 205, 18, 1);
+  margin: 5px;
+  border: 3px solid black;
+  /* position: relative; */
+}
+
+
+
+
+.numbers {
+
+    background-image: "url('http://localhost:3001/public/images/Frame 77.png')";
+   
+    font-family: 'Josefin Sans', sans-serif;
+    height: 135px;
+    width: 500px;
+    font-size: 60px;
+    margin-left: 5px;
+    /* overflow: hidden; */
+
+    
+}  
+
+
+/* .numberss {
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    flex-wrap: wrap;
+    height: 135px;
+    width: 98px;
+    font-size: 60px;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
+    color: rgba(250, 205, 18, 1);
+    background-color: white;
+
+    margin: 5px; 
+    
+  } */
+
+
+/* 動畫停止出現 */
+.play { 
+  /* display: none; */
+  background-image: url('http://localhost:3001/public/images/Frame 82.png');
+border: 2px solid red;
+  width: 100px;
+  height: 150px;
+  /* border: 2px solid red; */
+  margin-left: 10px;
+  background-repeat: no-repeat, repeat;
+
+}
+
+
+
+
+.play2 {
+  display: none;
+  background-image: url('http://localhost:3001/public/images/Frame 82.png');
+  background-repeat: no-repeat, repeat;
+  width: 100px;
+  height: 150px;
+  border: 2px solid red;
+
+  margin: 20px;
+}
+
+
+
+
+.btn {
+  width: 200px;
+  height: 150px;
+  cursor: pointer;
+  /* margin: 100px; */
+  border: none;
+  background-color: transparent;
+
+}
+
+
+@keyframes nina {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  20% {
+    transform: translateY(-80px);
+  }
+
+  30% {
+    transform: translateY(-100px);
+  }
+
+  50% {
+    transform: translateY(-300px);
+  }
+
+  70% {
+    transform: translateY(-100px);
+  }
+
+  90% {
+    transform: translateY(-500px)
+  }
+
+  100% {
+    transform: translateY(-200px)
+  }
+}
+
+@keyframes secondAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(50px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}

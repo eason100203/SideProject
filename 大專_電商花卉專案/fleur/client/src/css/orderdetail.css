@@ -1,0 +1,119 @@
+.orderInformation {
+    /* border: 2px seagreen solid; */
+    margin-top: 100px;
+}
+
+
+
+#orderBar {
+    /* border: 2px salmon solid; */
+    margin-top: 80px;
+}
+
+
+
+.orderNumber {
+    /* border: 2px rgb(28, 22, 112) solid; */
+    display: flex;
+}
+
+.orderNumber p {
+    font-size: 1.5rem;
+    color: #4C4844;
+}
+
+.orderNumber__detail {
+    border-bottom: 1px #ffffff solid;
+    margin-left: auto;
+}
+
+
+
+
+.orderState {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 50px;
+    row-gap: 30px;
+    width: 100%;
+    /* border: 2px skyblue solid; */
+
+}
+
+.orderState p {
+    color: #4C4844;
+    font-size: 1.5rem;
+}
+
+.damnHr {
+    margin: 8px 0;
+    opacity: 0.5;
+}
+
+
+#orderProductName {
+    margin-top: 100px;
+    /* border: seagreen solid 2px; */
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    column-gap: 0px;
+    row-gap: 30px;
+}
+
+
+#orderProductName p {
+    font-size: 1.5rem;
+    color: #4C4844;
+    /* border: 2px slateblue solid; */
+}
+
+#orderProductName .ProductName {
+    text-align: right;
+}
+
+#orderProductDetail {
+    margin: 35px 0;
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    column-gap: 0px;
+    row-gap: 30px;
+}
+
+#orderProductDetail p {
+    font-size: 1.5rem;
+    color: #4C4844;
+}
+
+#orderProductDetail .describe {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+#orderProductDetail .ProductName {
+    text-align: right;
+}
+
+#Recipient {
+    margin-top: 20px;
+}
+
+#Recipient p {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    color: #4C4844;
+}
+
+.freight {
+    padding: 5px;
+}
+
+.needToPay {
+    padding: 5px;
+}
+
+.dataImg {
+    width: 180px;
+    aspect-ratio: 1 / 1.2;
+    object-fit: cover;
+    /* border: 2px solid salmon; */
+}

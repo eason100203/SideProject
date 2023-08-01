@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品內頁</title>
+  <link rel="stylesheet" href="../../public/css/productInside.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+  </style>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <div id="imgDiv">
+      <div class="imgItems"><img src="../../public/images/OIP (1).jpg" alt="">
+      </div>
+      <div class="imgItems"><img src="../../public/images/R1.jpg" alt=""></div>
+      <div class="imgItems"><img src="../../public/images/OIP.jpg" alt=""></div>
+      <div class="imgItems"><img src="../../public/images/OIP (2).jpg" alt=""></div>
+    </div>
+    <div id="test">
+      <div id="lunbo">
+        <div class="single-item">
+          <div class="imgItems"><img src="../../public/images/OIP (1).jpg" alt="">
+          </div>
+          <div class="imgItems"><img src="../../public/images/R1.jpg" alt=""></div>
+          <div class="imgItems"><img src="../../public/images/OIP.jpg" alt=""></div>
+          <div class="imgItems"><img src="../../public/images/OIP (2).jpg" alt=""></div>
+        </div>
+      </div>
+      <div id="contentDiv">
+        <div id="MainContent">
+          <div class="ItemName">
+            <p class="flowerName">單朵向日葵花束/棉花乾燥花束</p>
+            <p class="ItemPrice">NT.999</p>
+          </div>
+          <div class="CountButton">
+            <input type="button" value="-" id="del" class="quantity_reduce" />
+            <p id="quantity" class="quantity_number">1</p>
+            <input type="button" value="+" id="add" class="quantity_increase" />
+          </div>
+          <div class="btnSet2">
+            <button id="next2">加入購物車</button>
+            <button id="next3">直接購買</button>
+          </div>
+          <hr>
+          <div id="itemInfo">
+            <div id="Infomation">
+              <p id="infoName">商品資訊</p>
+              <p id="InfoContent">向日葵俗稱葵花、葵花籽、日頭花、太陽花，
+                為菊科一年生草本植物。向日葵此名乃直
+                接取自它的屬名Helianthus ，希臘語helios意
+                為太陽，anthos意為花。</p>
+            </div>
+            <div id="SpecificationDiv">
+              <p id="Specification">詳細規格</p>
+              <ol class="SpecificationItem">花材：紅玫瑰20朵</ol>
+              <ol class="SpecificationItem">配件：時令花材</ol>
+              <ol class="SpecificationItem">包裝：綠色系</ol>
+              <ol class="SpecificationItem">尺寸：寬45公分 高35公分</ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script> -->
+
+
+  <script>
+    $(".single-item").slick({
+      dots: true,
+      autoplay: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive: [{
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+
+    var quantityElement = document.getElementById('quantity');
+    var decreaseButton = document.getElementById('del');
+
+    decreaseButton.addEventListener('click', function() {
+      var quantity = parseInt(quantityElement.innerText);
+      if (quantity > 1) {
+        quantity--;
+      }
+      quantityElement.innerText = quantity.toString()
+    });
+
+
+    var increaseButton = document.getElementById('add');
+    increaseButton.addEventListener('click', function() {
+
+      var quantity = parseInt(quantityElement.innerText);
+      quantity++;
+      quantityElement.innerText = quantity.toString()
+    });
+
+
+    let t1 = 0;
+    let t2 = 0;
+    let timer = null;
+
+    document.addEventListener('scroll', function() {
+      clearTimeout(timer);
+      t1 = getScrollTop();
+      timer = setTimeout(isScrollEnd, 800);
+      imgDiv.classList.add('scrollStyle');
+    });
+
+    function isScrollEnd() {
+      t2 = getScrollTop();
+      if (t2 === t1) {
+        imgDiv.classList.remove('scrollStyle');
+      }
+    }
+
+    function getScrollTop() {
+      return document.documentElement.scrollTop || document.body.scrollTop;
+    }
+  </script>
+</body>
+
+</html>

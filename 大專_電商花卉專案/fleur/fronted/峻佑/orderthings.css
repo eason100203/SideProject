@@ -1,0 +1,932 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+body {
+    /* border: #1a0dab solid 2px; */
+}
+
+/* 花BAR */
+#outerDiv {
+    max-width: 1440px;
+    padding: 0 220px;
+    /* 設定頁面高度 (待商討)*/
+    height: 1600px;
+    /* border: 2px sienna solid; */
+}
+
+
+header {
+    position: relative;
+    height: 200px;
+    background-image: url('./historybg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+h2 {
+    flex: none;
+    font-size: 48px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: rgba(217, 217, 217, 1);
+    padding-top: 50px;
+}
+
+.cart--overlay {
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(10, 10, 10, 0.4);
+
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav li span {
+    padding-left: 5px;
+}
+
+
+.carts {
+    position: relative;
+    top: 35px;
+}
+
+.carts__numbercart {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 55px;
+    height: 30px;
+}
+
+.carts__number {
+    flex: auto;
+    font-size: 25px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bold;
+    color: rgba(217, 217, 217, 1);
+
+}
+
+
+hr {
+    background-color: #4C4844;
+    opacity: 60%;
+    height: 1px;
+    border: none;
+    /* width: 1000px; */
+    /* 左 */
+    margin: 0 0 0 1vw;
+}
+
+.orderDetail {
+    max-width: 1440px;
+    /* 上下左 */
+    margin: 100px 0 1vw 1vw;
+    font-size: 2rem;
+}
+
+.orderBlock {
+    display: grid;
+    /* width: 1000px; */
+    height: 3vw;
+    grid-template-columns: 30% 30% 13.3% 13.3% 13.3%;
+    margin: 1vw 0 1vw 1vw;
+    /* border: 2px solid black; */
+}
+
+
+.orderProduct {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.orderText {
+    font-size: 1.5rem;
+}
+
+.orderPrice {
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+.orderQuantity {
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+.ordertotal {
+    /* border:5px solid red; */
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+.cartBlock {
+    /* width: 1000px; */
+    display: grid;
+    grid-template-columns: 30% 30% 13.3% 13.3% 13.3%;
+    margin: 1vw 0 1vw 1vw;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.cartImage {
+    height: 100px;
+    padding: 0 0 0 0;
+    text-align: left;
+}
+
+.cartText {
+    text-align: left;
+}
+
+.cartPrice {
+    text-align: right;
+}
+
+.cartQuanitiy {
+    text-align: right;
+}
+
+.cartTotal {
+    text-align: right;
+}
+
+
+
+dialog {
+    border: none;
+    width: 35vw;
+    height: 40vh;
+    background: rgb(255, 255, 255);
+    font-size: 1rem;
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    line-height: 2rem;
+    margin: 20vh auto 0;
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+#dialogOpen {
+    height: 320px;
+    width: 500px;
+}
+
+
+#dialogOpen2 {
+    height: 240px;
+    width: 500px;
+}
+
+#dialogOpen3 {
+    height: 240px;
+    width: 500px;
+}
+
+@keyframes example {
+    0% {
+        margin-top: 25vh;
+    }
+
+    100% {
+        margin-top: 20vh;
+    }
+}
+
+.afterDialogText {
+    font-size: 1.5rem;
+    margin: 50px 0 10px 0;
+    /* width: 1000px; */
+    text-align: left;
+    padding-left: 10px;
+}
+
+.CCR {
+    margin: 0 0 50px 0px;
+}
+
+.beforeDialogText {
+    color: #1a0dab;
+    font-size: 1.5rem;
+    margin: 0 0 2vh 0;
+    /* border: red solid 3px; */
+}
+
+#creditCardReady {
+    color: #1a0dab;
+    font-size: 1.5rem;
+    width: auto;
+    margin-left: 10px;
+}
+
+.beforeDialogText:hover,
+#creditCardReady:hover,
+#logisticsReady:hover,
+#dialogReady390:hover {
+    text-decoration: none;
+    cursor: pointer;
+    /* text-shadow: 3px 3px 3px #ffd000; */
+}
+
+dialog::backdrop {
+    background-color: rgb(255, 0, 0), 100%;
+}
+
+.closeDialog {
+    margin-left: 95%;
+    font-size: 1.5rem;
+    /* margin-bottom: 100%; */
+}
+
+.closeDialog:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.closeDialog2 {
+    margin-left: 95%;
+    font-size: 1.5rem;
+    /* margin-bottom: 100%; */
+}
+
+.closeDialog2:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.closeDialog3 {
+    margin-left: 95%;
+    /* margin-bottom: 100%; */
+    font-size: 1.5rem;
+}
+
+.closeDialog3:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.dialogBlock {
+    color: #4C4844;
+    display: inline-block;
+    margin-top: 3vh;
+    font-size: 1.2rem;
+    /* border: #ff3c01 5px solid; */
+}
+
+.dialogBlock2 {
+    color: #4C4844;
+    display: inline-block;
+    margin-top: 3vh;
+    font-size: 1.2rem;
+    /* border: #ff3c01 5px solid; */
+}
+
+.checkBox {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    /* height: 20px; */
+    /* border: #ff3c01 5px solid; */
+}
+
+.saleCode {
+    height: 5vh;
+    width: 20vw;
+    font-size: 1.2rem;
+    /* margin-bottom: 20px; */
+    /* border: #ff3c01 5px solid; */
+}
+
+input {
+    font-size: 1.2rem;
+}
+
+input::-webkit-input-placeholder {
+    color: #b9b9b9;
+    font-size: 1.2rem;
+}
+
+
+.otherSale {
+    margin-left: 3vw;
+    margin-top: 3vh;
+    font-size: 1.5rem;
+}
+
+.diaLogBtn {
+    width: 100px;
+    margin-top: 40px;
+    margin-left: 390px;
+    background-color: white;
+}
+
+#checkBoxNone {
+    visibility: hidden;
+}
+
+.divBlock {
+    display: grid;
+    grid-template-columns: 20% 84.3%;
+    margin-top: 50px;
+}
+
+.divBlock2 {
+    display: grid;
+    grid-template-columns: 85% 10%;
+    margin-bottom: 50px;
+}
+
+.divnone {
+    display: none;
+}
+
+.divBlock3 {
+    display: none;
+}
+
+
+.divBlock4 {
+    display: none;
+}
+
+.closeSaleBtn2 {
+    display: none;
+}
+
+#sale {
+    padding-left: 1vw;
+    font-size: 1.5rem;
+    width: 250px;
+
+}
+
+#prompt {
+    font-size: 1.5rem;
+    margin-left: 1vw;
+    width: 500px;
+}
+
+#dialogReady {
+    font-size: 1.5rem;
+    /* border: #ff3c01 5px solid; */
+}
+
+#dialogReady390 {
+    display: none;
+}
+
+#creditCardReady {
+    font-size: 1.5rem;
+}
+
+#logisticsReady {
+    font-size: 1.5rem;
+    color: #1a0dab;
+    margin-left: 10px;
+    /* border: red solid 3px; */
+}
+
+.closeSaleBtn {
+    height: 5vh;
+    font-size: 1.2rem;
+    background-color: white;
+    border-radius: 0px;
+    border: 1px solid rgb(0, 0, 0);
+    scale: 1.2;
+}
+
+.closeSaleBtn:hover {
+    border-radius: 0px;
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    scale: 1.2;
+}
+
+
+
+.dialogRadio {
+    margin-left: 3vw;
+}
+
+.priceTextFirst {
+    font-size: 1.5rem;
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+
+.priceText {
+    font-size: 1.5rem;
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+
+.priceTextEnd {
+    font-size: 1.5rem;
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+
+
+.priceTextBlock {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    /* width: 1000px; */
+}
+
+#a1,
+#a2,
+#a3,
+#a4 {
+    text-align: right
+}
+
+.btnGrid {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+    /* border: #1a0dab solid 2px; */
+}
+
+#up {
+    border: #000000 solid 1px;
+    border-radius: 0;
+    background-color: white;
+    width: 200px;
+    /* margin-left: 40px; */
+    height: 6vw;
+    font-size: 1.5rem;
+}
+
+#up:hover {
+    border: #000000 solid 1px;
+    border-radius: 0;
+    border: 0;
+    /* margin-left: 40px; */
+    width: 200px;
+    height: 6vw;
+    background-color: black;
+    color: #f5f5f5;
+    font-size: 1.5rem;
+}
+
+#down {
+    border: #000000 solid 1px;
+    background-color: white;
+    width: 200px;
+    margin-left: 150px;
+    height: 6vw;
+    font-size: 1.5rem;
+}
+
+#down:hover {
+    border: #000000 solid 1px;
+    border-radius: 0;
+    border: 0;
+    margin-left: 150px;
+    width: 200px;
+    height: 6vw;
+    background-color: black;
+    color: #f5f5f5;
+    font-size: 1.5rem;
+}
+
+.line {
+    border-top: 1px solid #4d4d4d;
+    border-bottom: 1px solid #4d4d4d;
+    background-color: #f5f5f5;
+    height: 18px;
+    /* width: 1000px; */
+    margin-left: 1vw;
+    margin-bottom: 1vw;
+}
+
+.line2 {
+    border-top: 1px solid #4d4d4d;
+    /* width: 1000px; */
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+
+@media (max-width:391px) {
+
+
+
+    /* 花BAR */
+    #outerDiv {
+        max-width: 1440px;
+        padding: 0 1rem;
+        /* 設定頁面高度 (待商討)*/
+        height: 1600px;
+        /* border: 2px sienna solid; */
+    }
+
+    .orderDetail {
+        margin: 50px 0 1vw 1vw;
+        font-size: 1.5rem;
+    }
+
+    .orderBlock {
+        margin: 2vw 0 5vw 1vw;
+    }
+
+
+    .orderProduct {
+        font-size: 1rem;
+        text-align: left;
+        /* border: #3cf178 solid; */
+    }
+
+    .orderText {
+        font-size: 1rem;
+    }
+
+    .orderPrice,
+    .orderQuantity,
+    .ordertotal {
+        font-size: 1rem;
+        text-align: right;
+    }
+
+    .cartBlock {
+        /* width: 1000px; */
+        display: grid;
+        grid-template-columns: 30% 30% 13.3% 13.3% 13.3%;
+        margin: 3vw 0 3vw 1vw;
+    }
+
+    .cartImage {
+        height: 50px;
+        padding: 0 0 0 0;
+        text-align: left;
+    }
+
+    .cartText {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .cartPrice,
+    .cartQuanitiy,
+    .cartTotal {
+        text-align: right;
+        font-size: 1rem;
+    }
+
+    .divBlock {
+        display: grid;
+        grid-template-columns: 30%;
+        margin-top: 30px;
+    }
+
+    .divBlock2 {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        margin-left: 1vw;
+        margin-bottom: 0;
+        height: 30px;
+    }
+
+    .divBlock3 {
+        display: grid;
+        grid-template-columns: 80%;
+        margin-bottom: 0;
+        margin-left: 1vw;
+    }
+
+    .divBlock4 {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        margin-bottom: 30px;
+        margin-left: 1vw;
+        /* border: #ffd000 2px solid; */
+    }
+
+    .divnone {
+        display: block;
+    }
+
+    #sale {
+        padding-left: 1vw;
+        font-size: 1rem;
+    }
+
+    #dialogReady {
+        display: none;
+    }
+
+    #dialogReady390 {
+        display: grid;
+        grid-template-columns: 80%;
+        /* margin-bottom: 30px; */
+        font-size: 1rem;
+        color: #1a0dab;
+
+    }
+
+    .afterDialogText {
+        font-size: 1.5rem;
+        margin: 30px 0 0 0;
+        /* width: 1000px; */
+        text-align: left;
+        padding-left: 10px;
+        font-size: 1rem;
+    }
+
+    .CCR {
+        margin: 0 0 30px 0px;
+        font-size: 1rem;
+    }
+
+    #logisticsReady,
+    #creditCardReady {
+        font-size: 1rem;
+        color: #1a0dab;
+        margin-left: 10px;
+        /* border: red solid 3px; */
+    }
+
+    .priceTextBlock {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        /* width: 1000px; */
+    }
+
+    .priceTextFirst {
+        font-size: 1rem;
+        margin-left: 1vw;
+        margin-top: 1vw;
+    }
+
+    .priceText {
+        font-size: 1rem;
+        margin-left: 1vw;
+        margin-top: 1vw;
+    }
+
+    .priceTextEnd {
+        font-size: 1rem;
+        margin-bottom: 1vw;
+        margin-left: 1vw;
+        margin-top: 1vw;
+    }
+
+    .btnGrid {
+        display: flex;
+        margin-top: 7vh;
+        justify-content: center;
+        /* border: #1a0dab 2px solid; */
+    }
+
+
+    #up {
+        width: 100px;
+        margin-left: 0px;
+        height: 8vw;
+        font-size: 1rem;
+    }
+
+    #up:hover {
+        width: 100px;
+        background-color: black;
+        color: white;
+        margin-left: 0px;
+        height: 8vw;
+        font-size: 1rem;
+    }
+
+    #down {
+        margin-left: 20px;
+        width: 100px;
+        height: 8vw;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        font-size: 1rem;
+    }
+
+    #down:hover {
+        margin-left: 20px;
+        width: 100px;
+        height: 8vw;
+        background-color: black;
+        color: #f5f5f5;
+        font-size: 1rem;
+    }
+
+
+    #prompt {
+        display: none;
+    }
+
+    #prompt390 {
+        font-size: 1rem;
+    }
+
+    #prompt390B {
+        font-size: 1rem;
+        /* border: #ffd000 2px solid; */
+    }
+
+    .closeSaleBtn {
+        font-size: 1rem;
+        background-color: white;
+        border-radius: 0px;
+        border: 1px solid rgb(0, 0, 0);
+        height: 3vh;
+        scale: 1;
+    }
+    
+    .closeSaleBtn:hover {
+        border-radius: 0px;
+        background-color: black;
+        color: white;
+        border: 1px solid rgb(0, 0, 0);
+        height: 3vh;
+        scale: 1;
+    }
+
+    .closeSaleBtn2 {
+        display: none;
+        position: absolute;
+        height: 23px;
+        font-size: 0.8rem;
+        right: 1px;
+        border: #ffd000 2px solid;
+        top: -6px
+        
+    }
+
+    #positionBlock {
+        /* border: 2px seagreen solid; */
+        position: relative;
+    }
+
+
+
+
+    dialog {
+        width: 80vw;
+        height: 38vh;
+        background: rgb(255, 255, 255);
+        box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        margin: 10vh auto 0;
+        font-size: 1rem;
+    }
+
+
+    #dialogOpen {
+        height: 43vh;
+    }
+
+    #dialogOpen2 {
+        height: 31vh;
+    }
+
+    #dialogOpen3 {
+        height: 31vh;
+    }
+
+    .diaLogBtn {
+        margin-top: 10%;
+        margin-left: 60%;
+        font-size: 1rem;
+    }
+
+    .otherSale {
+        margin-left: 3vw;
+        margin-top: 3vh;
+        font-size: 1.2rem;
+    }
+
+
+    .closeDialog {
+        margin-left: 94%;
+        margin-top: 2px;
+        font-size: 1.2rem;
+        /* margin-bottom: 100%; */
+    }
+
+    .closeDialog2 {
+        margin-left: 94%;
+        margin-top: 2px;
+        font-size: 1.2rem;
+        /* margin-bottom: 100%; */
+    }
+
+    .closeDialog3 {
+        margin-left: 94%;
+        margin-top: 2px;
+        font-size: 1.2rem;
+        /* margin-bottom: 100%; */
+    }
+
+
+    @keyframes example {
+        0% {
+            margin-top: 15vh;
+        }
+
+        100% {
+            margin-top: 10vh;
+        }
+    }
+
+    .dialogBlock {
+        color: #4C4844;
+        /* display: inline-block; */
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .saleCode {
+        height: 5vh;
+        width: 50vw;
+        /* margin-bottom: 20px; */
+        /* border: #ff3c01 5px solid; */
+    }
+
+    .saleCode2 {
+        /* border: 2px saddlebrown solid; */
+        font-size: 1rem;
+        /* margin-bottom: 20px; */
+        /* border: #ff3c01 5px solid; */
+    }
+
+    input::-webkit-input-placeholder {
+        color: #b9b9b9;
+        font-size: 1rem;
+    }
+
+
+    header {
+        height: 50px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    .carts {
+        top: 0px;
+    }
+
+    .carts_img {
+        width: 30px;
+        height: 34.81px;
+    }
+
+    .carts__numbercart {
+        top: 10px;
+        width: 30px;
+        height: 20px;
+    }
+
+    .carts__number {
+        font-size: 15px;
+        text-align: center;
+        color: rgba(217, 217, 217, 1);
+    }
+
+    h2 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    #carticon {
+        width: 30px;
+    }
+
+}

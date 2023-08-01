@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收件資訊</title>
+    <link rel="stylesheet" href="./css/customer.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2l/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <!-- 台灣地址 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-twzipcode@1.7.15-rc1/jquery.twzipcode.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="jquery.twzipcode.min.js"></script>
+    <script src="./twzipcode.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+    </style>
+</head>
+<script>
+    $('#twzipcode').twzipcode({
+        'css': [
+            'addr-county', //縣市
+            'addr-distrcit',  // 鄉鎮市區
+            'addr-zip' // 郵遞區號
+        ]
+    });
+    var data = $('#twzipcode').twzipcode('data');
+
+    function InputUserData() {
+        const cname = document.getElementById("cname1").value;
+        const telOfUser = document.getElementById("tel1").value;
+        const address = document.getElementById("address1").value;
+        const address2 = document.getElementById("address3").value;
+        document.getElementById("cname2").value = cname;
+        document.getElementById("tel2").value = telOfUser;
+        document.getElementById("address2").value = address;
+        document.getElementById("address4").value = address2;
+    }
+
+</script>
+
+<style>
+
+
+</style>
+
+<body>
+
+    <header>
+        <div class="cart--overlay"></div>
+        <nav>
+            <h2>LOGO</h2>
+            <ul>
+                <div class="carts">
+                    <!--購物車圖示-->
+                    <svg width="55"  id="carticon" viewBox="0 0 69 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.14132 27.3774C6.28967 25.5471 7.83115 24.1367 9.68326 24.1367H59.0898C60.9421 24.1367 62.4836 25.5471 62.6318 27.3774L65.7498 65.8461C66.0821 69.9467 62.8155 73.4561 58.6659 73.4561H10.1071C5.95779 73.4561 2.69092 69.9467 3.0233 65.8461L6.14132 27.3774Z"
+                            stroke="#D9D9D9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M48.6005 34.7053V17.0912C48.6005 9.30886 42.2368 3 34.3871 3C26.5372 3 20.1737 9.30886 20.1737 17.0912V34.7053"
+                            stroke="#D9D9D9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <div class="carts__numbercart">
+                        <!--購物車圖示內數字-->
+                        <div id="number-box" class="carts__number"><span>0</span></div>
+                    </div>
+                </div>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="forFlexDiv">
+        <div id="container">
+            <div id="customerTry">
+                <p class="customer">訂購人資訊</p>
+
+                <p>
+                    <input type="text" placeholder="請輸入姓名" class="inputName" id="cname1" value="">
+                </p>
+                <p>
+                    <input type="tel" placeholder="聯繫電話" class="inputTel" id="tel1" value="">
+                </p>
+                <p>
+                <div id="zipcode1">
+                    <div class="f1" data-role="county">
+                    </div>
+                    <div class="f2" data-role="district">
+                    </div>
+                    <input name="Address" type="text" class="f13 address form-control" id="address1">
+                </div>
+                <input name="Address" type="text" class="f13 address form-control" id="address3" placeholder="請輸入詳細地址">
+                <script>
+                    $("#zipcode1").twzipcode({
+                        "zipcodeIntoDistrict": true,
+                        "css": ["city form-control", "town form-control"],
+                        "countyName": "city", // 指定城市 select name
+                        "districtName": "town" // 指定地區 select name
+                    });
+                </script>
+
+                </p>
+            </div>
+            <div>
+                <div id="theSame">
+                    <p class="customer--address">收件人資訊</p>
+                    <div>
+                        <input type="checkbox" id="checkbox1" onclick="InputUserData()">
+                        <label class="checkbox1" for="checkbox1">同訂購人</label>
+                    </div>
+                </div>
+                <p>
+                    <input type="text" placeholder="請輸入姓名" class="inputName" id="cname2" value="">
+                </p>
+                <p>
+                    <input type="tel" placeholder="聯繫電話" class="inputTel" id="tel2" value="">
+                </p>
+
+                <p>
+
+                <div id="zipcode2">
+                    <div class="f3" data-role="county">
+                    </div>
+                    <div class="f4" data-role="district">
+                    </div>
+                    <input name="Address" type="text" class="f13 address form-control" id="address2">
+                </div>
+                <input name="Address" type="text" class="f13 address form-control" id="address4" placeholder="請輸入詳細地址">
+                <script>
+                    $("#zipcode2").twzipcode({
+                        "zipcodeIntoDistrict": true,
+                        "css": ["city form-control", "town form-control"],
+                        "countyName": "city", // 指定城市 select name
+                        "districtName": "town" // 指定地區 select name
+                    });
+                </script>
+
+                </p>
+
+            </div>
+
+            <div class="btnSet">
+                <button id="back">上一步</button>
+                <button id="next">完成訂購</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

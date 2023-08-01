@@ -1,0 +1,115 @@
+.forFlex {
+    display: flex;
+    justify-content: center;
+}
+
+
+#outerDiv {
+    justify-content: center;
+    width: 1440px;
+    max-width: 1440px;
+    padding: 0 220px;
+}
+
+.orderDetail {
+    margin: 100px 0 0 0;
+    font-size: 2rem;
+
+}
+
+.inputStyle {
+    margin: 30px 0px;
+    padding: 0 40px;
+    /* border: 2px red solid; */
+    font-size: 1.5rem;
+    color: #4C4844;
+}
+
+.inputStyle_Text {
+    font-size: 1.5rem;
+    width: 900px;
+    color: #4C4844;
+    border: none;
+    border-bottom: 1px #afafaf solid;
+    padding: 5px 0;
+}
+
+.inputStyle_Address {
+    font-size: 1.5rem;
+    padding: 3px 0;
+    width: 440px;
+    color: #4C4844;
+    border: none;
+    border-bottom: 1px #afafaf solid;
+    margin-right: 10px;
+}
+
+#ok {
+    background-color: white;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    height: 5vw;
+    margin: 7vw 0vw;
+    cursor: pointer;
+}
+
+.verificationCode {
+    background-color: white;
+    border: 1px solid black;
+    font-size: 1.2rem;
+    margin: 3px;
+    padding: 5px 20px;
+    color: #4C4844;
+    cursor: pointer;
+}
+
+.verificationCode:active {
+    background-color: #4C4844;
+    border: 1px solid #4C4844;
+    font-size: 1.2rem;
+    margin: 3px;
+    padding: 5px 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#ok2 {
+    background-color: white;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 400px;
+    height: 5vw;
+    margin: 2vw 0vw;
+    cursor: pointer;
+}
+
+#okFlex {
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid rgb(102, 54, 156); */
+}
+
+#heightDiv {
+    height: 30px;
+
+}
+
+.ReCAPTCHA {
+    /* border: 2px solid rgb(102, 54, 156); */
+    margin-bottom: 5px;
+}
+
+.forgotPwd {
+    color: #1877f2;
+    font-size: 1.2rem;
+}
+
+
+.forgotPwd:hover {
+    color: #1877f2;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #1877f2;
+}

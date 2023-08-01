@@ -1,0 +1,131 @@
+.header {
+    position: relative;
+    height: 200px;
+    background-image: url('http://localhost:3001/public/images/historybg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.a {
+    flex: none;
+    font-size: 48px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: rgba(217, 217, 217, 1);
+
+}
+
+.a img {
+    padding-top: 10px;
+    width: 250px;
+}
+
+/* 加一層遮光片 */
+.cartoverlay {
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(10, 10, 10, 0.4);
+
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+}
+
+.nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.nav li span {
+    padding-left: 5px;
+}
+
+
+.carts {
+    position: relative;
+    top: 35px;
+}
+
+.carts__numbercart {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 55px;
+    height: 30px;
+}
+
+.carts__number {
+    flex: auto;
+    font-size: 25px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bold;
+    color: rgba(217, 217, 217, 1);
+
+}
+
+@media screen and (max-width: 391px) {
+    .header {
+        height: 50px;
+    }
+
+    .nav {
+        padding: 10px;
+    }
+
+    .carts {
+        top: 0px;
+    }
+
+    .carts_img {
+        width: 30px;
+        height: 34.81px;
+    }
+
+    .carts__numbercart {
+        top: 10px;
+        width: 30px;
+        height: 20px;
+    }
+
+    .carts__number {
+        font-size: 15px;
+        text-align: center;
+        color: rgba(217, 217, 217, 1);
+    }
+
+    .h2 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .carticon {
+        width: 30px;
+    }
+
+    .a img {
+        /* border: 2px salmon solid; */
+        width: 90px;
+        margin-top: -250px;
+        padding-bottom: 10px;
+    }
+}

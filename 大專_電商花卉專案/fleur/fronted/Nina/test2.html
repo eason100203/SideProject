@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>fleur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <style>
+    .all {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin: 0;
+
+      background-repeat: no-repeat, repeat;
+      /* font-family: ; */
+    }
+
+
+
+    .container {
+      height: 640px;
+      width: 703px;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      padding-left: 400px;
+      padding-top: 32px;
+    }
+
+    .img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .img img {
+      height: 640px;
+      width: 703px;
+    }
+
+
+    .reel {
+      background-color: white;
+      border-top: 3px solid black;
+      border-bottom: 3px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+
+      /* margin: 0 3px 0 3px; */
+
+    }
+
+    #reel1 {
+      border-right: 3px solid black;
+      border-left: 3px solid black;
+    }
+
+    #reel2 {
+      border-right: 3px solid black;
+
+    }
+
+    #reel3 {
+      border-right: 3px solid black;
+
+    }
+
+
+
+    button {
+      font-size: 16px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+
+    .reel {
+      flex-wrap: wrap;
+      height: 135px;
+      /* 數字高度 */
+      width: 98px;
+      font-size: 60px;
+      font-family: 'Josefin Sans', sans-serif;
+      overflow: hidden;
+      color: rgba(250, 205, 18, 1);
+      background-image: url(./Frame\ 68.png);
+
+    }
+
+    .numbers {
+      display: none;
+      background-image: url(./Frame\ 67.png);
+
+      width: 100px;
+      height: 800px;
+
+      animation-name: nina;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-out;
+      animation-iteration-count: infinite;
+    }
+
+
+    .numberss {
+      display: none;
+
+      background-image: url(./Frame\ 69.png);
+
+      width: 100px;
+      height: 800px;
+
+      animation-name: nina;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-out;
+      animation-iteration-count: infinite;
+    }
+
+    .play {
+      width: 100px;
+      height: 150px;
+      /* border: 2px solid red; */
+      margin: 35px;
+      /* position: relative; */
+    }
+
+    .animationaa {
+      /* border: 2px solid red; */
+
+      background-image: url(./Frame\ 82.png);
+      background-repeat: no-repeat, repeat;
+     
+
+      width: 100px;
+      height:150px;
+
+      animation-name: palypaly;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-out;
+      animation-iteration-count: infinite;
+    }
+
+
+    .play2{
+      display: none;
+      background-image: url(./Frame\ 82.png);
+      background-repeat: no-repeat, repeat;
+      width: 100px;
+      height:150px;
+      /* border: 2px solid red;
+       */
+      margin: 23px;
+
+
+    }
+
+
+    button {
+      width: 100px;
+      height: 150px;
+      /* margin: 100px; */
+      border: none;
+      background-color: transparent;
+
+    }
+
+
+    @keyframes nina {
+      0% {
+        transform: translateY(-100px);
+      }
+
+      20% {
+        transform: translateY(-80px);
+      }
+
+      30% {
+        transform: translateY(-100px);
+      }
+
+      50% {
+        transform: translateY(-300px);
+      }
+
+      70% {
+        transform: translateY(-100px);
+      }
+
+      90% {
+        transform: translateY(-500px)
+      }
+
+      100% {
+        transform: translateY(-100px)
+      }
+    }
+
+
+    @keyframes playplay {
+      0% {
+        transform: translateY(0px);
+      }
+      30% {
+        transform: translateY(40px);
+      }
+      80% {
+        transform: translateY(0px);
+      }
+      100% {
+        transform: translateY(-20px);
+      }
+
+    }
+
+
+  </style>
+
+
+</head>
+
+
+<body>
+  <div class="all">
+    <div class="img">
+      <img src="./Frame 65.png" alt="">
+    </div>
+    <div class="container">
+      <div class="reel" id="reel1">
+        <div class="numbers"></div>
+    
+      </div>
+      <div class="reel" id="reel2">
+        <div class="numberss"></div>
+
+      </div>
+      <div class="reel" id="reel3">
+        <div class="numbers"></div>
+     
+      </div>
+      <div class="play" id="playButton">
+        <div class="play2"> </div>
+        <button onclick="startAnimation()">
+
+        <div class="animationaa" id="animationDiv"></div>
+      </button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const money = ["1", "2", "3", "5", "6", "7", "8", "9"];
+    const spintime = 100; // milliseconds
+    const playtime = 3000;
+    const animationDuration = 1000; // 2 seconds
+
+    function startAnimation() {
+      const numbers = document.querySelectorAll(".numbers");
+      const numberss = document.querySelectorAll(".numberss");
+      const animationDiv = document.querySelector(".animationaa");
+      const playButton = document.getElementById("playButton");
+      const play2 = document.querySelector(".play2");
+
+      // playButton.style.display = "none";
+
+      setTimeout(() => {
+        
+          // animationDiv.style.display = "block";
+          animationDiv.style.animation = "playplay 1s infinite";
+    
+          setTimeout(() => {
+            animationDiv.style.display = "none";
+            play2.style.display = "block";
+          }, 800)
+    
+        });
+      ;
+
+      numbers.forEach((number) => {
+        number.style.transition = `transform 1s ease-in-out`;
+        number.style.display = "block";
+        
+      },0);
+
+      numberss.forEach((number) => {
+        number.style.transition = `transform 1s ease-in-out`;
+        number.style.display = "block";
+        
+      },0);
+     
+
+
+
+      // Step 2: Wait for 1 second (animationDuration) and then spin the reels
+      setTimeout(() => {
+        numbers.forEach((number) => {
+          number.style.transition = `transform ${spintime}ms cubic-bezier(0, 0.995, 0.99, 1)`;
+        });
+
+        // Step 3: Wait for the spinning animation to end and then display the final numbers
+        setTimeout(() => {
+          const randomIndex1 = Math.floor(Math.random() * money.length);
+          const randomIndex2 = Math.floor(Math.random() * money.length);
+          const randomIndex3 = Math.floor(Math.random() * money.length);
+
+          const result1 = money[randomIndex1];
+          const result2 = money[randomIndex2];
+          const result3 = money[randomIndex3];
+
+          document.getElementById("reel1").innerHTML = result1;
+          document.getElementById("reel2").innerHTML = result2;
+          document.getElementById("reel3").innerHTML = result3;
+
+          // Step 4: After displaying the final numbers, start the second animation (playplay) right away
+          
+        }, spintime + 2000); // Adjust this delay as needed
+      }, animationDuration);
+
+     
+    }
+  </script>
+
+
+
+
+
+
+</body>
+
+</html>

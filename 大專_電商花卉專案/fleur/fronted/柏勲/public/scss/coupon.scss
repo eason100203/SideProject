@@ -1,0 +1,203 @@
+@import './variable.scss';
+@import './function.scss';
+@import './fontFamily.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: map-get($color, word);
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    margin: map-get($distance, toNav) auto map-get($distance, toFooter);
+    padding: 0 map-get($distance, screenEdge);
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin: map-get($distance, y) 0;
+    font-size: map-get($fz, title);
+    font-weight: bold;
+
+    @include RWD(391) {
+        font-size: map-get($fz390, title);
+    }
+}
+
+.nav {
+    margin-bottom: map-get($distance, y);
+    width: 100%;
+    display: flex;
+    list-style: none;
+
+    &__item {
+        width: 25%;
+        text-align: center;
+        font-size: map-get($fz, subTitle);
+        border-right: 3px solid #000;
+
+        &:last-child {
+            border-right: 0;
+        }
+
+        @include RWD(391) {
+            font-size: map-get($fz390, subTitle);
+        }
+    }
+}
+
+.couponContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: map-get($distance, y) map-get($distance, x);
+
+    @include RWD(391) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.coupon {
+    &__main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: 5px solid map-get($color, bg);
+        border-radius: 3px;
+    }
+
+    &__discount {
+        line-height: $couponHeight;
+        font-size: map-get($fz, special);
+        text-align: center;
+        color: #fff;
+        background-color: map-get($color, bg);
+
+        @include RWD(391) {
+            font-size: map-get($fz390, special);
+        }
+    }
+
+    &__description {
+        padding: map-get($distance, insidePadding);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: map-get($fz, content);
+
+        @include RWD(391) {
+            font-size: map-get($fz390, content);
+        }
+    }
+
+    &__condition {
+        font-size: map-get($fz, content) * .95;
+
+        @include RWD(391) {
+            font-size: map-get($fz390, content) * .95;
+        }
+    }
+
+    &__codeAndTime {
+        font-size: map-get($fz, content) * .9;
+
+        @include RWD(391) {
+            font-size: map-get($fz390, content) * .9;
+        }
+
+        &>p:first-child {
+            border-bottom: 1px solid map-get($color, word);
+        }
+    }
+
+    &__howToUseTrigger {
+        grid-column: 1 / span 2;
+        margin-top: map-get($distance, insideMargin);
+        padding: map-get($distance, insidePadding) 0;
+        font-size: map-get($fz, search);
+        text-align: center;
+        border-radius: 3px;
+        color: #fff;
+        background-color: map-get($color, bg);
+        cursor: pointer;
+
+        @include RWD(391) {
+            font-size: map-get($fz390, search);
+        }
+    }
+}
+
+.howToUse {
+    margin: auto;
+    position: relative;
+    font-size: map-get($fz, content);
+    border-width: 0;
+    border-radius: 3px;
+
+    @include RWD(391) {
+        font-size: map-get($fz390, content);
+    }
+
+    // &::backdrop {}
+
+    &__closeBtn {
+        position: absolute;
+        right: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            right: 50%;
+            width: 3px;
+            height: 100%;
+            background-color: #000;
+        }
+
+        &::before {
+            transform: rotateZ(45deg);
+        }
+
+        &::after {
+            transform: rotateZ(135deg);
+        }
+    }
+
+    &__main {
+        margin: 1.6rem;
+        padding: 2rem 3rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem 0;
+        border: 3px solid map-get($color, bg);
+        border-radius: 3px;
+    }
+
+    &__title {
+        padding: .5rem 0;
+        text-align: center;
+        border: 1px solid map-get($color, bg);
+    }
+
+    &__description {}
+
+    &__subTitle {
+        margin-bottom: .3rem;
+        padding-bottom: .3rem;
+        border-bottom: 1px solid map-get($color, bg);
+    }
+
+    &__text {}
+}

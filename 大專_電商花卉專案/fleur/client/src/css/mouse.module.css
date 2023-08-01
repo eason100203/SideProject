@@ -1,0 +1,6 @@
+.mouse {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    z-index: 9999;
+}

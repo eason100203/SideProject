@@ -1,0 +1,147 @@
+@import './variable.scss';
+@import './function.scss';
+@import './fontFamily.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: map-get($color, word);
+}
+
+a {
+    text-decoration: none;
+}
+
+.search {
+    margin: map-get($distance, toNav) auto map-get($distance, toFooter);
+    padding: 0 map-get($distance, screenEdge);
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        margin: 0 0 map-get($distance, y);
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__titleText {
+        grid-column: 1 / span 2;
+        grid-row-start: 2;
+        font-size: map-get($fz, subTitle);
+
+        @include RWD(391) {
+            font-size: map-get($fz390, subTitle);
+        }
+    }
+
+    &__sortBtn {
+        grid-column-start: 2;
+        justify-self: flex-end;
+        padding: .3rem 1.5rem;
+        font-size: map-get($fz, search);
+        border-radius: 8px;
+        background-color: #fff;
+        cursor: pointer;
+
+        @include RWD(391) {
+            font-size: map-get($fz390, search);
+        }
+
+        &:hover {
+            color: #fff;
+            background-color: map-get($color, btnHover);
+        }
+    }
+}
+
+.sortList {
+    margin: auto map-get($distance, screenEdge) auto auto;
+    width: (map-get($fz, search) * 6 + map-get($distance, insideMargin) * 2 + .5rem)*3;
+    font-size: map-get($fz, search);
+    border: none;
+    border-radius: 5px;
+
+    @include RWD(391) {
+        width: (map-get($fz390, search) * 6 + map-get($distance, insideMargin) * 2 + .5rem)*3;
+        font-size: map-get($fz390, search);
+    }
+
+    // ==========下拉dailog==========
+    display: block;
+    transform-origin: 50% 0;
+    transform: scaleY(1);
+    transition: .5s;
+   
+
+    &:not([open]) {
+        transform: scaleY(0);
+    }
+
+    &::backdrop {
+        background-color: #000000aa;
+    }
+
+    &__list {
+        margin: map-get($distance, insideMargin);
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: map-get($distance, y) 0;
+        list-style: none;
+    }
+
+    &__item {
+        text-align: center;
+    }
+}
+
+.result {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: map-get($distance, y) map-get($distance, x);
+
+    @include RWD(391) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__item {}
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 1/1.17;
+    }
+
+    &__info {
+        display: grid;
+        grid-template-columns: repeat(2, fit-content);
+        gap: .5rem 0;
+    }
+
+    &__text {
+        font-size: map-get($fz, content);
+
+        &:last-of-type {
+            grid-row-start: 2;
+        }
+
+        @include RWD(391) {
+            font-size: map-get($fz390, content);
+        }
+    }
+
+    &__addToCart {
+        grid-row: 1 / span 2;
+        align-self: flex-end;
+        margin-left: auto;
+        width: map-get($fz, content) * 2;
+        aspect-ratio: 1/1;
+        cursor: pointer;
+
+        @include RWD(391) {
+            width: map-get($fz390, content) * 2;
+        }
+    }
+}

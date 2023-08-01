@@ -1,0 +1,157 @@
+@import './variable.scss';
+@import './function.scss';
+
+.main {
+    margin: map-get($distance, toNav) auto map-get($distance, toFooter);
+    padding: 0 map-get($distance, screenEdge);
+    max-width: 1440px;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__text {
+        font-size: map-get($fz, title);
+        font-weight: bold;
+    }
+}
+
+.search {
+    grid-column: 1 / span 2;
+    margin: 0 0 map-get($distance, insideMargin);
+    position: relative;
+    width: 100%;
+    height: 40px;
+
+    &__img {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 40px;
+        height: 30px;
+        padding: 8px 13px;
+        border-right: 1px solid #aaa;
+        aspect-ratio: 1 / 1;
+    }
+
+    &__input {
+        padding-left: 45px;
+        width: 100%;
+        height: 100%;
+        font-size: map-get($fz, search);
+        border: 3px solid #aaa;
+        border-radius: 25px;
+
+        &:focus {
+            box-shadow: 0 0 5px #333;
+        }
+    }
+}
+
+.sort {
+    justify-self: flex-end;
+    position: relative;
+
+    &__btn {
+        width: 8rem;
+        line-height: 2.2rem;
+        font-size: map-get($fz, select);
+        color: #000;
+        background-color: #fff;
+        border: 1px solid #4c4844;
+        cursor: pointer;
+
+        &:hover {
+            color: #fff;
+            background-color: #000;
+            border-color: #000;
+        }
+    }
+
+    &__list {
+        margin-top: 5px;
+        width: 20rem;
+        position: absolute;
+        right: 0;
+        font-size: map-get($fz, select);
+        background-color: #fff;
+        border-radius: 5px;
+        transition: height .5s;
+        overflow: hidden;
+        list-style: none;
+    }
+
+    &__item {
+        padding: map-get($distance, insidePadding);
+        text-align: center;
+    }
+
+    &__mask {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #000000aa;
+        visibility: hidden;
+        opacity: 0;
+        transition: .3s;
+        z-index: 1001;
+
+        &--show {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+.result {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: map-get($distance, y) map-get($distance, x);
+    margin-top: map-get($distance, insideMargin);
+}
+
+.product {
+
+    &__img {
+        aspect-ratio: 1 / 1.2;
+        object-fit: cover;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        font-size: map-get($fz, content);
+        text-align: left;
+
+        &Name {}
+
+        &Price {
+            grid-column: 1;
+        }
+
+        &Cart {
+            grid-column: 2;
+            grid-row: 1 / span 2;
+            width: 80%;
+            align-self: flex-end;
+            justify-self: flex-end;
+            aspect-ratio: 1 / 1;
+            cursor: pointer;
+        }
+    }
+}
+
+.page {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+
+    &__num {
+        margin: 1rem;
+        color: #000;
+        font-size: map-get($fz, content);
+    }
+}

@@ -1,0 +1,102 @@
+@import './variable.scss';
+
+.main {
+    max-width: 1440px;
+    margin: 100px 0 10vh;
+    padding: 0 220px;
+}
+
+.form {
+    margin-bottom: 3rem;
+
+    &:nth-of-type(2) {
+        position: relative;
+    }
+
+    &__title {
+        font-size: map-get($fz, title);
+        font-weight: normal;
+    }
+
+    &__iptContainer {
+        margin-top: map-get($distance, insideMargin);
+        display: grid;
+        grid-template-columns: repeat(2, 15%) 1fr;
+        gap: map-get($distance, insideMargin);
+    }
+
+    &__ipt {
+        font-size: map-get($fz, content);
+        border: none;
+        border-bottom: 1px solid #000;
+        background-color: transparent;
+
+        &:first-child,
+        &:nth-child(2) {
+            grid-column-end: span 3;
+        }
+    }
+}
+
+.theSame {
+    position: absolute;
+    top: (map-get($fz, title) - map-get($fz, content)) * 1.2;
+    left: map-get($fz, title) * 5 + 1rem;
+    display: flex;
+
+    &__ckb {}
+
+    &__txt {
+        font-size: map-get($fz, content);
+    }
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+    // border: #4C4844 1px solid;
+
+    &__btn {
+        width: 220px;
+        aspect-ratio: 1 / .35;
+        font-size: map-get($fz, subTitle);
+        background-color: #fff;
+        border: 1px solid;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #4c4844;
+            color: #fff;
+        }
+    }
+
+    // &__btn {
+    //     width: 50%;
+    //     line-height: 3.75rem;
+    //     font-size: map-get($fz, subTitle);
+    //     border: none;
+    //     cursor: pointer;
+
+    //     &:hover {
+    //         font-weight: 600;
+    //     }
+
+    //     &--prev {
+    //         background-color: #fff;
+    //         color: #4c4844;
+
+    //         &:hover {
+    //             text-shadow: 0 0 1px #4c4844;
+    //         }
+    //     }
+
+    //     &--next {
+    //         background-color: #4c4844;
+    //         color: #fff;
+
+    //         &:hover {
+    //             text-shadow: 0 0 1px #fff;
+    //         }
+    //     }
+    // }
+}

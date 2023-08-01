@@ -1,0 +1,37 @@
+#forFlexDiv {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+
+#container {
+    /* border: 2px black solid; */
+    margin-top: 100px;
+    padding: 0 220px;
+    width: 1440px;
+    display: flex;
+}
+
+#historyOrder {
+    width: 100%;
+}
+
+
+#hr {
+    margin: 1.5rem 0;
+}
+
+
+@media screen and (max-width: 391px) {
+
+
+    #container {
+        /* border: 2px black solid; */
+        margin-top: 50px;
+        padding: 0 20px;
+        width: 1440px;
+        display: flex;
+    }
+
+}

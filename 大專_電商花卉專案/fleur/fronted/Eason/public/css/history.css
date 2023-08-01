@@ -1,0 +1,565 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+#forFlexDiv {
+    display: flex;
+    justify-content: center;
+}
+
+
+#container {
+    /* border: 2px black solid; */
+    margin-top: 100px;
+    padding: 0 220px;
+    width: 1440px;
+    display: flex;
+}
+
+#historyOrder {
+    width: 100%;
+    /* border: 2px red solid; */
+    height: 1400px;
+
+}
+
+#historyItems {
+    display: flex;
+    /* border: 2px rgb(231, 253, 178) solid; */
+    justify-content: space-between;
+}
+
+#historyItems a {
+    text-decoration: none;
+}
+
+
+.borderLink {
+    border-bottom: 1px solid #4C4844;
+}
+
+
+#historyItems li {
+    border-bottom: 1px rgb(255, 255, 255) solid;
+    list-style: none;
+    font-size: 1.8rem;
+    color: #4C4844;
+}
+
+hr {
+    margin: 1.5rem 0;
+}
+
+
+
+header {
+    position: relative;
+    height: 200px;
+    background-image: url('../images/historybg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+h2 {
+    flex: none;
+    font-size: 48px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: rgba(217, 217, 217, 1);
+    padding-top: 50px;
+}
+
+/* 加一層遮光片 */
+.cart--overlay {
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(10, 10, 10, 0.4);
+
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav li span {
+    padding-left: 5px;
+}
+
+
+.carts {
+    position: relative;
+    top: 35px;
+}
+
+.carts__numbercart {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 55px;
+    height: 30px;
+}
+
+.carts__number {
+    flex: auto;
+    font-size: 25px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bold;
+    color: rgba(217, 217, 217, 1);
+
+}
+
+#historyDateSelect {
+    /* border: 2px seagreen solid; */
+    width: 100%;
+    margin-top: -10px;
+    margin-left: -35px;
+}
+
+
+#datePick {
+    /* border: 2px salmon solid; */
+    display: flex;
+    width: 350px;
+}
+
+#prev-arrow,
+#next-arrow {
+    /* border: 2px saddlebrown solid; */
+    /* background-color: #ccc; */
+    color: #4C4844;
+    text-align: center;
+    cursor: pointer;
+    font-size: 2rem;
+    width: 100%;
+    padding-bottom: 6px;
+
+}
+
+#selected-date {
+    text-align: center;
+    font-size: 1.2rem;
+    width: 200px;
+    color: #4C4844;
+    border: none;
+}
+
+
+
+
+
+.orderInformation {
+    /* border: 2px seagreen solid; */
+    margin-top: 100px;
+}
+
+
+
+
+#orderBar {
+    /* border: 2px salmon solid; */
+    margin-top: 30px;
+}
+
+
+
+.orderNumber {
+    /* border: 2px rgb(28, 22, 112) solid; */
+    display: flex;
+}
+
+.orderNumber p {
+    font-size: 1.5rem;
+    color: #4C4844;
+}
+
+.orderNumber__detail {
+    border-bottom: 1px #4C4844 solid;
+}
+
+.orderNumber a {
+    text-decoration: none;
+    margin-left: auto;
+}
+
+.orderState {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 50px;
+    row-gap: 30px;
+    /* border: 2px skyblue solid; */
+
+}
+
+.orderState p {
+    color: #4C4844;
+    font-size: 1.5rem;
+}
+
+.damnHr {
+    margin: 8px 0;
+}
+
+
+@media screen and (max-width: 992px) {
+
+    #container {
+        /* border: 2px black solid; */
+        margin-top: 100px;
+        padding: 0 5rem;
+        width: 1440px;
+        display: flex;
+    }
+
+
+
+    #historyItems li {
+        border-bottom: 1px rgb(255, 255, 255) solid;
+        list-style: none;
+        font-size: 1.5rem;
+        color: #4C4844;
+    }
+
+    #historyItems li:hover {
+        /* border: 2px rgb(253, 178, 178) solid; */
+        list-style: none;
+        font-size: 1.5rem;
+        color: #4C4844;
+        border-bottom: 1px solid #4C4844;
+    }
+
+
+
+    #historyDateSelect {
+        /* border: 2px seagreen solid; */
+        width: 100%;
+        margin-top: -10px;
+        margin-left: -35px;
+    }
+
+    /* CSS */
+    #datePick {
+        /* border: 2px salmon solid; */
+        display: flex;
+        width: 350px;
+    }
+
+    #prev-arrow,
+    #next-arrow {
+        /* border: 2px saddlebrown solid; */
+        /* background-color: #ccc; */
+        color: #4C4844;
+        text-align: center;
+        cursor: pointer;
+        font-size: 1.5rem;
+        width: 100%;
+        padding-bottom: 0px;
+
+    }
+
+    #selected-date {
+        text-align: center;
+        font-size: 1.2rem;
+        width: 200px;
+        color: #4C4844;
+        border: none;
+    }
+
+
+    .orderInformation {
+        /* border: 2px seagreen solid; */
+        margin-top: 100px;
+    }
+
+
+    .orderNumber p {
+        font-size: 1.2rem;
+        color: #4C4844;
+    }
+
+    .orderState {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 50px;
+        row-gap: 30px;
+        /* border: 2px skyblue solid; */
+
+    }
+
+    .orderState p {
+        color: #4C4844;
+        font-size: 1.2rem;
+    }
+
+    .orderState__secLine p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #container {
+        /* border: 2px black solid; */
+        margin-top: 100px;
+        padding: 0 5rem;
+        width: 1440px;
+        display: flex;
+    }
+
+
+
+    #historyItems li {
+        border-bottom: 1px rgb(255, 255, 255) solid;
+        list-style: none;
+        font-size: 1.2rem;
+        color: #4C4844;
+    }
+
+    #historyItems li:hover {
+        /* border: 2px rgb(253, 178, 178) solid; */
+        list-style: none;
+        font-size: 1.2rem;
+        color: #4C4844;
+        border-bottom: 1px solid #4C4844;
+    }
+
+
+
+    #historyDateSelect {
+        /* border: 2px seagreen solid; */
+        width: 100%;
+        margin-top: -10px;
+        margin-left: -35px;
+    }
+
+    /* CSS */
+    #datePick {
+        /* border: 2px salmon solid; */
+        display: flex;
+        width: 350px;
+    }
+
+    #prev-arrow,
+    #next-arrow {
+        /* border: 2px saddlebrown solid; */
+        /* background-color: #ccc; */
+        color: #4C4844;
+        text-align: center;
+        cursor: pointer;
+        font-size: 1.5rem;
+        width: 100%;
+        padding-bottom: 0px;
+
+    }
+
+    #selected-date {
+        text-align: center;
+        font-size: 1rem;
+        width: 200px;
+        color: #4C4844;
+        border: none;
+    }
+
+
+    .orderInformation {
+        /* border: 2px seagreen solid; */
+        margin-top: 100px;
+    }
+
+
+    .orderNumber p {
+        font-size: 1rem;
+        color: #4C4844;
+    }
+
+    .orderState {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 50px;
+        row-gap: 30px;
+        /* border: 2px skyblue solid; */
+
+    }
+
+    .orderState p {
+        color: #4C4844;
+        font-size: 1rem;
+    }
+
+    .orderState__secLine p {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+
+    #container {
+        /* border: 2px black solid; */
+        margin-top: 50px;
+        padding: 0 2rem;
+        width: 1440px;
+        display: flex;
+    }
+
+    #historyItems li {
+        border-bottom: 1px rgb(255, 255, 255) solid;
+        list-style: none;
+        font-size: 1.2rem;
+        color: #4C4844;
+    }
+
+    #historyItems li:hover {
+        /* border: 2px rgb(253, 178, 178) solid; */
+        list-style: none;
+        font-size: 1.2rem;
+        color: #4C4844;
+        border-bottom: 1px solid #4C4844;
+    }
+
+
+
+    #historyDateSelect {
+        /* border: 2px seagreen solid; */
+        width: 100%;
+        margin-top: -10px;
+        margin-left: -35px;
+    }
+
+    /* CSS */
+    #datePick {
+        /* border: 2px salmon solid; */
+        display: flex;
+        width: 350px;
+    }
+
+    #prev-arrow,
+    #next-arrow {
+        /* border: 2px saddlebrown solid; */
+        /* background-color: #ccc; */
+        color: #4C4844;
+        text-align: center;
+        cursor: pointer;
+        font-size: 1.5rem;
+        width: 100%;
+        padding-bottom: 0px;
+
+    }
+
+    #selected-date {
+        text-align: center;
+        font-size: 1rem;
+        width: 200px;
+        color: #4C4844;
+        border: none;
+    }
+
+
+    .orderInformation {
+        /* border: 2px seagreen solid; */
+        margin-top: 60px;
+    }
+
+
+    .orderNumber p {
+        font-size: 1rem;
+        color: #4C4844;
+    }
+
+    .orderState {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 0px;
+        row-gap: 30px;
+        /* border: 2px skyblue solid; */
+
+    }
+
+    .orderState p {
+        color: #4C4844;
+        font-size: 1rem;
+    }
+
+    .orderState__secLine p {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media screen and (max-width: 391px) {
+
+
+    #historyDateSelect {
+        /* border: 2px seagreen solid; */
+        width: 100%;
+        margin-top: -10px;
+        margin-left: 0px;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    .carts {
+        top: 0px;
+    }
+
+    .carts_img {
+        width: 30px;
+        height: 34.81px;
+    }
+
+    .carts__numbercart {
+        top: 10px;
+        width: 30px;
+        height: 20px;
+    }
+
+    .carts__number {
+        font-size: 15px;
+        text-align: center;
+        color: rgba(217, 217, 217, 1);
+    }
+
+    h2 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    #carticon {
+       width: 30px;
+    }
+
+}
+

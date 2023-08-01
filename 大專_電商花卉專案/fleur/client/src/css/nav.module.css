@@ -1,0 +1,437 @@
+.fleurSticky {
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    /* border: #e87604 1px solid; */
+}
+
+.fleurNav {
+    display: flex;
+    background-color: #ffffff;
+    /* border-bottom: #4C4844 1px solid; */
+    box-shadow: 0 0 3px rgb(107, 107, 107);
+}
+
+.fleurNav__icon {
+    display: block;
+    /* border: #00f 2px solid; */
+    background-color: rgb(255, 255, 255);
+    margin: 10px auto 20px 20px;
+}
+
+.fleurNav__iconImg {
+    width: 160px;
+    height: 100%;
+}
+
+.fleurNav__mains {
+    display: flex;
+    /* border: rgb(251, 255, 0) 2px solid; */
+    align-items: center;
+    text-decoration: none;
+}
+
+.fleurNav__main {
+    line-height: 85px;
+    font-size: 1.5rem;
+    padding-left: 5px;
+    margin: 0 10px;
+    /* border: rgb(255, 12, 210) 2px solid; */
+    background: rgb(255, 255, 255);
+}
+
+/* .fleurNav__main:hover {
+    line-height: 85px;
+    font-size: 1.5rem;
+    padding-left: 5px;
+    margin: 0 10px;
+    border: rgb(255, 12, 210) 2px solid;
+    background: #D3B9AA;
+} */
+
+.fleurNav__main a {
+    color: #4C4844;
+    text-decoration: none;
+    margin: 0 10px;
+    /* border: rgb(255, 12, 210) 2px solid; */
+    background: none;
+}
+
+.fleurNav__subs {
+    align-self: center;
+    margin: 5px 30px 0 auto;
+    /* border: rgb(10, 208, 73) 2px solid; */
+
+}
+
+.fleurNav__sub {
+    /* border: rgb(19, 35, 255) 2px solid; */
+    width: 30px;
+    margin: 0 10px;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+}
+
+.fleurNav__abc{
+    width: 30px;
+    margin: 0 10px;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+}
+
+.numbercart {
+    display: flex;
+    width: 48px;
+    height: 35px;
+    
+    /* background-color: #2a5abe; */
+    position: absolute;
+    top: 55px;
+    justify-content: center;
+    text-align: center;
+}
+
+.cart {
+    flex: auto;
+    font-size: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* .cart_a {
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+} */
+
+
+
+.Member__Dropdown {
+    display: block;
+    position: absolute;
+    width: 200px;
+    /* border: 1px solid #9b9b9b; */
+    font-size: 1.2rem;
+    text-align: center;
+    top: 75px;
+    right: 15px;
+    list-style: none;
+    background-color: white;
+    box-shadow: 0 0 3px gray;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+.Member__DropdownOpen {
+    display: block;
+    position: absolute;
+    width: 200px;
+    /* border: 1px solid #9b9b9b; */
+    font-size: 1.2rem;
+    text-align: center;
+    top: 75px;
+    right: 15px;
+    list-style: none;
+    background-color: white;
+    box-shadow: 0 0 3px gray;
+    height: 160px;
+    overflow: auto;
+    transition: 0.5s;
+    overflow-y: hidden;
+}
+
+
+.Member__DropdownOpenLogin {
+    display: block;
+    position: absolute;
+    width: 200px;
+    /* border: 1px solid #9b9b9b; */
+    font-size: 1.2rem;
+    text-align: center;
+    top: 75px;
+    right: 15px;
+    list-style: none;
+    background-color: white;
+    box-shadow: 0 0 3px gray;
+    height: 80px;
+    overflow: auto;
+    transition: 0.5s;
+    overflow-y: hidden;
+}
+
+.Member__DropdownOpen li {
+    /* border-bottom: #4C4844 1px solid; */
+    margin: 10px 0;
+}
+
+.Member__DropdownOpenLogin li {
+    /* border-bottom: #4C4844 1px solid; */
+    margin: 10px 0;
+}
+
+
+.Member__DropdownOpen a {
+    text-decoration: none;
+    color: #4C4844;
+}
+
+.Member__DropdownOpenLogin a {
+    text-decoration: none;
+    color: #4C4844;
+}
+
+.Member__DropdownOpen a:hover {
+    text-decoration: none;
+    color: #ce741a;
+}
+
+.Member__DropdownOpenLogin a:hover {
+    text-decoration: none;
+    color: #ce741a;
+}
+
+.Member__Dropdown li {
+    /* border-bottom: #4C4844 1px solid; */
+    margin: 10px 0;
+}
+
+
+.Member__Dropdown a {
+    text-decoration: none;
+    color: #4C4844;
+}
+
+.logoutBtn {
+    background-color: none;
+    border: none;
+    color: #4C4844;
+    background-color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.logoutBtn:hover {
+    background-color: none;
+    border: none;
+    color: #ce741a;
+    background-color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+.logoutBtn_disabled {
+    background-color: none;
+    border: none;
+    color: lightgray;
+    background-color: #ffffff;
+    font-size: 1.2rem;
+    cursor: default;
+}
+
+
+.menuIcon {
+    display: none;
+ 
+
+
+}
+
+.menu390 {
+    position: absolute;
+    visibility: hidden;
+}
+
+
+.numberBox{
+    position: absolute;
+    top: -3px;
+    left: 20px;
+    /* border: 2px solid red; */
+}
+
+@media screen and (max-width: 391px) {
+    .fleurSticky {
+        position: relative;
+        z-index: 1000;
+        /* border: 2px red solid; */
+    }
+
+
+
+    .fleurNav {
+        width: 390px;
+        display: flex;
+        background-color: #ffffff;
+        /* border: #e6801a 1px solid; */
+        box-shadow: 0 0 3px rgb(107, 107, 107);
+        margin-top: -10px;
+        margin-left: -10px;
+    }
+
+    .fleurNav__iconImg {
+        width: 80px;
+        height: 100%;
+    }
+
+    .fleurNav__subs {
+        align-self: center;
+        margin: 5px 15px 0 auto;
+        /* border: rgb(10, 208, 73) 2px solid; */
+
+    }
+
+
+    .fleurNav__sub {
+        /* border: rgb(19, 35, 255) 2px solid; */
+        width: 20px;
+        margin: 0 5px;
+        aspect-ratio: 1 / 1;
+        cursor: pointer;
+    }
+
+
+    .menuIcon {
+        display: inline-block;
+    }
+
+
+    .Member__Dropdown {
+        display: block;
+        position: absolute;
+        width: 200px;
+        /* border: 1px solid #9b9b9b; */
+        font-size: 1rem;
+        text-align: center;
+        top: 60px;
+        right: 15px;
+        list-style: none;
+        background-color: white;
+        box-shadow: 0 0 3px gray;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+
+    .Member__DropdownOpen {
+        display: block;
+        position: absolute;
+        width: 200px;
+        /* border: 1px solid #9b9b9b; */
+        font-size: 1rem;
+        text-align: center;
+        top: 60px;
+        right: 15px;
+        list-style: none;
+        background-color: white;
+        box-shadow: 0 0 3px gray;
+        height: 160px;
+        overflow: auto;
+        transition: 0.5s;
+        overflow-y: hidden;
+    }
+
+
+    .Member__DropdownOpenLogin {
+        display: block;
+        position: absolute;
+        width: 200px;
+        /* border: 1px solid #9b9b9b; */
+        font-size: 1rem;
+        text-align: center;
+        top: 60px;
+        right: 15px;
+        list-style: none;
+        background-color: white;
+        box-shadow: 0 0 3px gray;
+        height: 80px;
+        overflow: auto;
+        transition: 0.5s;
+        overflow-y: hidden;
+    }
+
+
+    .logoutBtn {
+        background-color: none;
+        border: none;
+        color: #4C4844;
+        background-color: #ffffff;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .logoutBtn:hover {
+        background-color: none;
+        border: none;
+        color: #ce741a;
+        background-color: #ffffff;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+
+    .logoutBtn_disabled {
+        background-color: none;
+        border: none;
+        color: lightgray;
+        background-color: #ffffff;
+        font-size: 1rem;
+        cursor: default;
+    }
+
+
+    .menu390 {
+        position: absolute;
+        text-align: center;
+        padding: 10px 0;
+        background-color: #ffffff;
+        width: 100%;
+        box-shadow: 0 0 3px gray;
+        height: 0;
+        top: 40px;
+        overflow: hidden;
+        transition: 0.7s;
+        z-index: 999;
+        overflow-y: hidden;
+    }
+
+
+    .menu390open {
+        position: absolute;
+        text-align: center;
+        padding: 10px 0;
+        background-color: #ffffff;
+        width: 100%;
+        box-shadow: 0 0 3px gray;
+        top: 50px;
+        height: 190px;
+        overflow: auto;
+        transition: 0.7s;
+        z-index: 999;
+        overflow-y: hidden;
+    }
+
+
+
+    .menu390 li {
+        padding: 10px 0;
+    }
+
+
+    .menu390 li:hover {
+        padding: 10px 0;
+        color: #ce741a;
+    }
+
+    .menu390open li {
+        padding: 10px 0;
+    }
+
+    .menu390open li:hover {
+        padding: 10px 0;
+        color: #ce741a;
+    }
+}

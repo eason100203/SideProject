@@ -1,0 +1,502 @@
+:root {
+    /* 字型大小變數 */
+    --font-size-title: 1.5rem;
+    --font-size-content: 1.2rem;
+}
+
+.mobile {
+    display: none;
+}
+
+
+/* --------------以下是網頁版項目清單的設定------------- */
+.products {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 1000px;
+    height: 350px;
+    
+    border-bottom: 1px solid gainsboro;
+
+
+}
+
+@media (max-width:391px) {
+    .products {
+        display: none;
+    }
+
+}
+
+
+
+.products__checkbox {
+    /* 核取方塊 */
+    width: 30px;
+    height: 30px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #988D91;
+    border-radius: 0px;
+    margin-right: 50px;
+}
+
+@media (max-width:391px) {
+    .products__checkbox {
+        display: none;
+    }
+}
+
+.products__checkbox:checked {
+    /* 核取方塊樣式覆蓋 */
+    background-color: white;
+    position: relative;
+    border: none;
+}
+
+@media (max-width:391px) {
+    .products__checkbox:checked {
+        display: none;
+    }
+}
+
+.products__checkbox:checked::after {
+    /* 核取方塊勾選後樣式覆蓋 */
+    content: url('http://localhost:3001/public/images/nina2.png');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: auto;
+    border: none;
+}
+
+.products__image {
+    /* 圖片與核取方塊的容器 */
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+
+.image {
+    height: 300px;
+    width: 200px;
+
+    object-fit: cover;
+    /* border:  2px solid red; */
+}
+
+
+
+@media (max-width:391px) {
+    .products__checkbox:checked::after {
+        display: none;
+    }
+
+    .products__image {
+        display: none;
+    }
+}
+
+.products__image img {
+    /* 項目清單-圖片高度 */
+    height: 80%;
+}
+
+@media (max-width:391px) {
+    .products__image img {
+        height: 100px;
+    }
+}
+
+
+
+
+.product__content ol {
+    /* 商品內容清單樣式設定 */
+    margin-bottom: 4px;
+    color: #4C4844;
+    /* border: 2px solid salmon; */
+}
+
+@media (max-width:391px) {
+
+    .product__content ol {
+        display: none;
+    }
+}
+
+.product__name {
+    /* 商品名稱 */
+    font-size: var(--font-size-title);
+    font-family: 'Noto Sans TC', sans-serif;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width:391px) {
+
+    .product__name {
+        display: none;
+    }
+}
+
+.product__content {
+    /* 商品描述 */
+    display: block;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-size: var(--font-size-content);
+    font-family: 'Noto Sans TC', sans-serif;
+    /* border: solid 1px seagreen; */
+
+}
+
+@media (max-width:391px) {
+    .product__content {
+        display: none;
+    }
+}
+
+.subtotal {
+    /* 數量與小計金額的容器 */
+    padding-top: 220px;
+    /* border: 2px sandybrown solid; */
+    margin-left: auto;
+}
+
+@media (max-width:391px) {
+    .subtotal {
+        display: none;
+    }
+}
+
+.subtotal__quantity {
+    /* 數量字串與下拉選單的容器 */
+    display: flex;
+    align-items: center;
+    /* border: 2px sandybrown solid; */
+}
+
+@media (max-width:391px) {
+    .subtotal__quantity {
+        display: none;
+
+    }
+}
+
+.subtotal__quantity p {
+    /* 數量字串的樣式 */
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: var(--font-size-title);
+    color: #4C4844;
+}
+
+@media (max-width:391px) {
+    .subtotal__quantity p {
+        display: none;
+    }
+}
+
+.subtotal select {
+    /* 下拉選單標籤的樣式 */
+    border: none;
+    background-color: transparent;
+    width: 110px;
+    margin-top: 5px;
+    margin-left: 10px;
+    color: #4C4844;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: var(--font-size-title);
+}
+
+@media (max-width:391px) {
+
+    .subtotal select {
+        display: none;
+    }
+}
+
+.subtotal__select {
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:391px) {
+    .subtotal__select {
+        display: none;
+    }
+
+}
+
+.subtotal__select option {
+    font-size: 14px;
+    color: black;
+}
+
+@media (max-width:391px) {
+    .subtotal__select option {
+        display: none;
+    }
+}
+
+.subtotal__sub {
+    /* 小計金額 */
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: var(--font-size-title);
+    color: #4C4844;
+    border-top: 1px solid #988D91;
+    padding-top: 10px;
+}
+
+@media (max-width:391px) {
+    .subtotal__sub {
+        display: none;
+    }
+}
+
+
+.btnSet {
+    display: flex;
+    margin: 100px 0 200px 0;
+    justify-content: center;
+    /* border: 2px solid blue; */
+}
+
+
+/* #next {
+    background-color: white;
+    width: 500px;
+    height: 8vw;
+    font-size: 1.5rem;
+
+} */
+
+
+/* #next:hover {
+    border-radius: 0;
+    border: 0;
+    width: 500px;
+    height: 8vw;
+    background-color: black;
+    color: #f5f5f5;
+    font-size: 1.5rem;
+
+} */
+
+
+
+
+
+
+/* --------------以下是手機版項目清單的設定------------- */
+
+@media (max-width:391px) {
+
+    .mobile {
+        display: flex;
+        width: 390px;
+        justify-content: center;
+    }
+
+    .mobile .mobile_products {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        justify-content: center;
+        max-width: 360px;
+        height: 180px;
+        position: relative;
+        border-bottom: 1px solid gainsboro;
+    }
+
+    .mobile .products__checkbox {
+        display: block;
+        width: 20px;
+        height: 20px;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border: 1px solid #4C4844;
+        border-radius: 0px;
+        margin-right: 20px;
+    }
+
+    .mobile .products__checkbox:checked {
+        display: block;
+        background-color: black;
+        position: relative;
+    }
+
+    .mobile .products__checkbox:checked::after {
+        display: block;
+        content: url('http://localhost:3001/public/images/nina2.png');
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: auto;
+    }
+
+    .mobile .products__image img {
+        height: 100px;
+    }
+
+    .mobile .mobile_products .products__image {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .mobile .quantity {
+        /* max-width: 100px; */
+        height: 100px;
+        justify-content: flex-start;
+        margin-left: 20px;
+        box-sizing: border-box;
+        width: 180px;
+
+    }
+
+    .mobile .name {
+        margin-bottom: 15px;
+    }
+
+    .mobile .mobile_money {
+        font-family: 'Noto Sans TC', sans-serif;
+        margin-bottom: 15px;
+    }
+
+    .mobile .mobile_quantity {
+        display: flex;
+        height: 18px;
+        align-items: center;
+    }
+
+    .mobile .quantity_reduce {
+        width: 20px;
+        height: 18px;
+        border: 1px solid black;
+        background-color: white;
+    }
+
+    .mobile .quantity_number {
+        width: 50px;
+        height: 20px;
+        text-align: center;
+        font-family: 'Noto Sans TC', sans-serif;
+        margin-bottom: 7px;
+    }
+
+    .mobile .quantity_increase {
+        width: 20px;
+        height: 18px;
+        text-align: center;
+        border: 0;
+        border: 1px solid black;
+        background-color: white;
+    }
+
+    .mobile .xx {
+        margin-top: 40px;
+    }
+
+   /* .btnSet {
+        display: none;
+        margin: 100px 0 200px 0;
+        justify-content: center;
+        border: 3px solid green;
+    } */
+
+
+    /* .btnSet2 {
+        display: flex;
+        margin: 7vh 0 200px 0;
+        justify-content: center;
+    }  */
+
+
+    /* #next2 {
+        background-color: white;
+        width: 250px;
+        height: 8vw;
+        font-size: 1rem;
+
+    } */
+
+
+    /* #next2:hover {
+        border-radius: 0;
+        border: 0;
+        width: 250px;
+        height: 8vw;
+        background-color: black;
+        color: #f5f5f5;
+        font-size: 1rem;
+
+    } */
+
+
+}
+
+#next123 {
+    background-color: white; 
+    color: black;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    
+    margin-top: 20px;
+    cursor: pointer;
+    /* border: 10px solid red; */
+    
+    width: 50%;
+    height: 6vw;
+}
+
+.xxxxx {
+    /* border: 2px solid red; */
+    color: transparent;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    
+    /* width: 100px;
+    height: 100px; */
+    /* background-image: url('http://localhost:3001/public/images/nina2.png'); */
+
+}
+
+.right{
+    margin-left: 170px;
+}
+
+#abc {
+    background-image: url('http://localhost:3001/public/images/nina1.png');
+    position: relative;
+    /* border-radius: 0px solide white; */
+    border: 1px white;
+
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    
+    background-position: right 0em top 50%, 0 0;
+    background-size: 20px;
+    background-repeat: no-repeat, repeat;
+    cursor: pointer;
+    outline: none;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.allll{
+    flex-wrap: wrap;
+    /* border: #4C4844 3px solid; */
+    margin-left: 245px;
+}

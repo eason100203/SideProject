@@ -1,0 +1,162 @@
+@import './variable.scss';
+@import './function.scss';
+
+.container {
+    margin: map-get($distance, toNav) auto map-get($distance, toFooter);
+    padding: 0 map-get($distance, screenEdge);
+    max-width: 1440px;
+    display: flex;
+}
+
+.aside {
+    padding-right: 5%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+        width: 100%;
+    }
+}
+
+.forSticky {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.info {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    &__titleContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__titleText {
+        padding-top: 10px;
+        font-size: map-get($fz, title);
+    }
+
+    &__textContainer {
+        display: flex;
+
+        &>div {
+            padding-right: 5%;
+
+            &:nth-child(1) {
+                width: 60%;
+            }
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 10px;
+        font-size: map-get($fz, subTitle);
+    }
+
+    &__text {
+        // font-size: map-get($fz, content);
+        font-size: 1.2rem;
+    }
+
+    &__textList {
+        list-style: none;
+    }
+}
+
+.amount {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    border: #4c4844 1px solid;
+
+    &__text {
+        width: calc(4 * 1.8rem);
+        // font-size: map-get($fz, content);
+        font-size: 1.8rem;
+        text-align: center;
+        border: none;
+        // transition: text-shadow .15s linear;
+        animation: .15s linear forwards;
+
+        &:focus {
+            // border-color: #4c4844;
+            outline-color: #4c4844;
+        }
+
+        &--change {
+            // text-shadow: 0 0px #4c4844;
+            animation-name: change;
+
+            @keyframes change {
+                0% {
+                    text-shadow: 0 -5px transparent;
+                }
+
+                100% {
+                    text-shadow: 0 0 #4c4844;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        width: 30%;
+        font-weight: 700;
+        // font-size: map-get($fz, select);
+        font-size: 1.5rem;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            font-weight: 900;
+            text-shadow: 0 0 2px #4c4844;
+        }
+    }
+}
+
+.buy {
+    display: flex;
+    // justify-content: space-between;
+    border: #4C4844 1px solid;
+
+    &__cart,
+    &__likeList {
+        width: 50%;
+        // width: 30%;
+        line-height: 3.75rem;
+        font-size: map-get($fz, select);
+        // font-weight: bold;
+        // border: #4C4844 1px solid;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            font-weight: 600;
+        }
+
+    }
+
+    &__cart {
+        color: #fff;
+        background-color: #4c4844;
+
+        &:hover {
+            text-shadow: 0 0 1px #fff;
+        }
+    }
+
+    &__likeList {
+        color: #4c4844;
+        background-color: #fff;
+
+        &:hover {
+            text-shadow: 0 0 1px #4c4844;
+        }
+    }
+}

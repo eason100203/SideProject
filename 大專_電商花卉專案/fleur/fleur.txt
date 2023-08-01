@@ -1,0 +1,134 @@
+md fleur
+cd fleur
+md server
+cd server
+npm init -y
+npm install --save express mysql ejs express-session cors nodemon
+cd .>index.js
+echo var express = require('express'); >index.js
+echo var session = require('express-session'); >>index.js
+echo var cors = require('cors'); >>index.js
+echo. >>index.js
+echo var homepage = require('./routers/homepage.js'); >>index.js
+echo var products = require('./routers/products.js'); >>index.js
+echo var news = require('./routers/news.js'); >>index.js
+echo var search = require('./routers/search.js'); >>index.js
+echo var shoppingCart = require('./routers/shoppingCart.js'); >>index.js
+echo var coupon = require('./routers/coupon.js'); >>index.js
+echo var likeList = require('./routers/likeList.js'); >>index.js
+echo var meaning = require('./routers/meaning.js'); >>index.js
+echo var about = require('./routers/about.js'); >>index.js
+echo var member = require('./routers/member.js'); >>index.js
+echo var service = require('./routers/service.js'); >>index.js
+echo. >>index.js
+echo var app = express(); >>index.js
+echo. >>index.js
+echo app.use(express.urlencoded({ extended: false })); >>index.js
+echo app.use(cors()); >>index.js
+echo. >>index.js
+echo. >>index.js
+echo app.listen(3001, ()=^>{ >>index.js
+echo console.log(new Date().toLocaleTimeString()) >>index.js
+echo }) >>index.js
+md public
+md routers
+cd public
+md images
+cd images
+md member
+cd ../../routers
+cd .>homepage.js
+echo var express = require('express'); >homepage.js
+echo var router = express.Router(); >>homepage.js
+echo. >>homepage.js
+echo module.exports = router; >>homepage.js
+cd .>products.js
+echo var express = require('express'); >products.js
+echo var router = express.Router(); >>products.js
+echo. >>products.js
+echo module.exports = router; >>products.js
+cd .>news.js
+echo var express = require('express'); >news.js
+echo var router = express.Router(); >>news.js
+echo. >>news.js
+echo module.exports = router; >>news.js
+cd .>search.js
+echo var express = require('express'); >search.js
+echo var router = express.Router(); >>search.js
+echo. >>search.js
+echo module.exports = router; >>search.js
+cd .>shoppingCart.js
+echo var express = require('express'); >shoppingCart.js
+echo var router = express.Router(); >>shoppingCart.js
+echo. >>shoppingCart.js
+echo module.exports = router; >>shoppingCart.js
+cd .>coupon.js
+echo var express = require('express'); >coupon.js
+echo var router = express.Router(); >>coupon.js
+echo. >>coupon.js
+echo module.exports = router; >>coupon.js
+cd .>likeList.js
+echo var express = require('express'); >likeList.js
+echo var router = express.Router(); >>likeList.js
+echo. >>likeList.js
+echo module.exports = router; >>likeList.js
+cd .>meaning.js
+echo var express = require('express'); >meaning.js
+echo var router = express.Router(); >>meaning.js
+echo. >>meaning.js
+echo module.exports = router; >>meaning.js
+cd .>about.js
+echo var express = require('express'); >about.js
+echo var router = express.Router(); >>about.js
+echo. >>about.js
+echo module.exports = router; >>about.js
+cd .>member.js
+echo var express = require('express'); >member.js
+echo var router = express.Router(); >>member.js
+echo. >>member.js
+echo module.exports = router; >>member.js
+cd .>service.js
+echo var express = require('express'); >service.js
+echo var router = express.Router(); >>service.js
+echo. >>service.js
+echo module.exports = router; >>service.js
+cd ../../
+npm install -g create-react-app
+create-react-app client
+cd client
+npm install --save react-router-dom axios
+cd src
+md components
+md pages
+cd pages
+cd .>homepage.js
+echo import React, { useState, useEffect } from 'react'; >homepage.js
+echo import Axios from 'axios'; >>homepage.js
+echo const Homepage = () =^> { >>homepage.js
+echo. >>homepage.js
+echo return ( >>homepage.js
+echo. >>homepage.js
+echo ) >>homepage.js
+echo } >>homepage.js
+echo export default Homepage; >>homepage.js
+cd ..
+md css
+md js
+del setupTests.js
+del logo.svg
+del index.css
+del App.test.js
+del App.css
+del App.js
+echo import React from 'react'; >index.js
+echo import ReactDOM from 'react-dom/client'; >>index.js
+echo import reportWebVitals from './reportWebVitals'; >>index.js
+echo import Homepage from './pages/homepage'; >>index.js
+echo. >>index.js
+echo const root = ReactDOM.createRoot(document.getElementById('root')); >>index.js
+echo root.render( >>index.js
+echo ^<React.StrictMode^> >>index.js
+echo ^<Homepage /^> >>index.js
+echo ^</React.StrictMode^> >>index.js
+echo ); >>index.js
+echo reportWebVitals(); >>index.js

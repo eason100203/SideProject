@@ -1,0 +1,42 @@
+#historyItems {
+    display: flex;
+    width: 100%;
+    /* border: 2px rgb(247, 37, 0) solid; */
+    justify-content: space-between;
+}
+
+#historyItems div {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.borderLink {
+    border-bottom: 1px solid #4C4844;
+}
+
+
+#historyItems li {
+    border-bottom: 1px rgb(255, 255, 255) solid;
+    list-style: none;
+    font-size: 1.8rem;
+    color: #444c4b;
+}
+
+@media screen and (max-width: 391px) {
+    #historyItems li {
+        border-bottom: 1px rgb(255, 255, 255) solid;
+        list-style: none;
+        font-size: 1.2rem;
+        color: #4C4844;
+    }
+
+    #historyItems li:hover {
+        /* border: 2px rgb(253, 178, 178) solid; */
+        list-style: none;
+        font-size: 1.2rem;
+        color: #4C4844;
+        border-bottom: 1px solid #4C4844;
+    }
+
+}

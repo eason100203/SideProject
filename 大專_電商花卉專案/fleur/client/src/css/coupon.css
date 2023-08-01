@@ -1,0 +1,125 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+    box-sizing: border-box;
+} */
+
+/* ----------------------------------------------------------------------- */
+/* body {
+    height: 1600px;
+    margin: auto;
+} */
+
+.display {
+    margin: 0 auto 0;
+    max-width: 1440px;
+    /* padding-left: 220px; */
+    /* padding-right: 220px; */
+    /* border: 2px solid red; */
+}
+
+.couponItem {
+    width: 100%;
+    height: 360px;
+    border: 1px solid rgb(173, 170, 166);
+    margin-bottom: 10px;
+}
+
+.couponButton {
+    background: rgb(173, 170, 166);
+    margin-bottom: 100px;
+
+}
+
+/* ----------------------------------------------------- */
+
+#couponStatus {
+    display: flex;
+    width: 100%;
+    /* border: 2px rgb(247, 37, 0) solid; */
+    justify-content: space-between;
+}
+
+#couponStatus div {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#couponStatus li {
+    border-bottom: 1px rgb(255, 255, 255) solid;
+    list-style: none;
+    font-size: 1.8rem;
+    color: #444c4b;
+    cursor: pointer;
+}
+
+/* ----------------------------------------------------- */
+
+.couponCardStatus {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* border: 2px rgb(247, 37, 0) solid; */
+    justify-content: space-between;
+}
+
+.couponCardStatusLi1 {
+    list-style: none;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background: rgb(173, 170, 166);
+}
+
+.couponCardStatusLi2 {
+    list-style: none;
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+/* ----------------------------------------------------- */
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-inner {
+    position: relative;
+    padding: 32px;
+    width: 100%;
+    max-width: 640px;
+    background-color: #fff;
+}
+
+.popup-inner .close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+/* ----------------------------------------------------- */
+
+#hr {
+    margin: 1.5rem 0;
+}
+
+/* ----------------------------------------------------- */
+
+.ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover {
+    color: #fff;
+    background-color: rgba(217, 217, 217, 1);
+}
+
+
+@media screen and (max-width: 390px) {}

@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+body {
+    max-width: 1200px;
+    margin-left: 8vw;
+    /* 設定頁面高度 (待商討)*/
+    height: 1600px;
+    font-size: 1.5rem;
+}
+
+hr {
+    background-color: #4C4844;
+    opacity: 60%;
+    height: 1px;
+    border: none;
+    width: 70%;
+    /* 左 */
+    margin: auto;
+}
+
+
+dialog {
+    border: none;
+    width: 500px;
+    height: 500px;
+    background: rgb(255, 255, 255);
+    font-size: medium;
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 20vh auto 0;
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+.dialog2 {
+    border: none;
+    width: 500px;
+    height: 300px;
+    background: rgb(255, 255, 255);
+    font-size: medium;
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 20vh auto 0;
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+.dialog3 {
+    border: none;
+    width: 500px;
+    height: 350px;
+    background: rgb(255, 255, 255);
+    font-size: medium;
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 20vh auto 0;
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+@keyframes example {
+    0% {
+        margin-top: 25vh;
+    }
+
+    100% {
+        margin-top: 20vh;
+    }
+}
+
+.CCR {
+    margin: 100px 0 0 0;
+}
+
+input::-webkit-input-placeholder {
+    color: #b9b9b9;
+    font-size:0.8rem;
+  }
+
+dialog::backdrop {
+    background-color: rgb(255, 0, 0), 100%;
+}
+
+.closeDialog {
+    margin-left: 95%;
+    /* margin-bottom: 100%; */
+}
+
+.closeDialog:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.dialogBlock {
+    color: #4C4844;
+    margin-top: 3vh;
+    /* border: #ff3c01 5px solid; */
+}
+
+
+.dialogBtn {
+    width: 350px;
+    margin-left: 75px;
+    padding: 5px 0;
+    background-color: white;
+    font-size: 1rem;
+}
+
+.dialogBtn2 {
+    width: 100px;
+    margin-left: 320px;
+    padding: 5px 0;
+    background-color: white;
+}
+
+.dialogBtn3 {
+    width: 280px;
+    margin-left: 110px;
+    padding: 7px 0;
+    background-color: white;
+}
+
+.dialogBtn4 {
+    width: 150px;
+    margin-left: 90px;
+    padding: 7px 0;
+    background-color: white;
+}
+
+.dialogBtn5 {
+    width: 150px;
+    margin-left: 20px;
+    padding: 7px 0;
+    background-color: white;
+}
+
+#logisticsReady {
+    font-size: 1.5rem;
+    color: #1a0dab;
+    /* border: red solid 3px; */
+}
+
+#closeSaleBtn {
+    height: 5vh;
+}
+
+#closeSaleBtn:hover {
+    background-color: black;
+    opacity: 70%;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+
+
+.dialogMember {
+    display: grid;
+    grid-template-columns: 130px 140px;
+    margin-left: 75px;
+    margin-bottom: 1vw;
+    font-size: 1.5rem;
+}
+
+.dialogMemberInto {
+    display: grid;
+    grid-template-columns: 250px 100px;
+    margin: 40px 0 1vw 75px;
+    font-size: 1.2rem;
+}
+input::-webkit-input-placeholder {
+    color: #b9b9b9;
+    font-size:1rem;
+}
+
+.dialogMemberInto2 {
+    margin: 40px 0 1vw 75px;
+}
+
+.into {
+    border-bottom: 1px solid black;
+    width: 75%;
+    /* border: solid red 1px; */
+}
+
+.into2 {
+    border-bottom: 1px solid black;
+    margin-left: 75px;
+    width: fit-content;
+    font-size: 1.5rem;
+}
+
+.into3 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.into4 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.inputText {
+    border: none;
+    border-bottom: 1px solid #4C4844;
+    margin: 1vw 0 1vw 75px;
+    width: 350px;
+}
+
+#logisticsReady2,
+#logisticsReady3,
+#logisticsReady4,
+#logisticsReady5,
+#logisticsReady6,
+#logisticsReady7,
+#logisticsReady8 {
+    color: blue;
+}
+
+.btnGroup {
+    display: grid;
+    grid-template-columns: 250px 30px;
+}
+
+.number {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 50px 30px 50px;
+}
+
+.rectangle {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 30px 0;
+    margin-left: 15px;
+}
+
+#forget {
+    background-color: white;
+}
+#forgetPassword {
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+.submit {
+    font-size: 1rem;
+}

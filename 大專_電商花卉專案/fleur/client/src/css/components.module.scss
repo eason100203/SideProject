@@ -1,0 +1,69 @@
+@import './variable.scss';
+
+.fleurList {
+    &_ul {
+        display: flex;
+    }
+
+    &_li {
+        list-style: none;
+    }
+}
+
+
+.fleurCard {
+    &_figure {}
+
+    &_imgContainer {
+        overflow: hidden;
+        aspect-ratio: 1 / 1.2;
+    }
+
+    &_img {
+        width: 100%;
+        transition: .35s linear;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &_figcaption {
+        // text-align: center;
+        cursor: default;
+    }
+}
+
+
+
+.fleurCard2 {
+    &_figure2 {}
+
+    &_img2 {
+        width: 100%;
+        transition: .35s linear;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &_figcaption2 {
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width: 391px) {
+    .fleurList {
+        &_ul {
+            display: none;
+        }
+
+        &_li {
+            display: none;
+            list-style: none;
+        }
+    }
+}

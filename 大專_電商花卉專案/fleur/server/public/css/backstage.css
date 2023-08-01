@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    margin: auto;
+    padding: 1rem 2rem;
+    max-width: 1440px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 30% 1fr 10%;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 2rem;
+}
+
+.header__title {
+    justify-self: flex-start;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.header__sort {
+    justify-self: end;
+}
+
+.header__sort-link {
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.header__btn {
+    width: 100%;
+}
+
+.product {}
+
+.product__title {}
+
+.product__title-container,
+.product__item {
+    display: grid;
+    grid-template-columns: 10% 10% repeat(3, 5%) 20% repeat(3, 10%) repeat(3, 5%);
+    align-items: center;
+    justify-items: center;
+}
+
+.product__title-item {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.product__title-item--span3 {
+    grid-column-end: span 3;
+}
+
+.product__item {}
+
+.product__item--offShelve {
+    position: relative;
+}
+
+.product__item--offShelve::before,
+.product__item--offShelve::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 95%;
+    transform: translate(0%, -50%);
+}
+
+.product__item--offShelve::before {
+    height: 100%;
+    background-color: #1e1e1e99;
+}
+
+/* .product__item--offShelve::after {
+    height: 20%;
+    border-width: 20px 0;
+    border-style: solid;
+    border-color: #000;
+} */
+
+.product__item-inner {
+    font-size: 1.6rem;
+}
+
+.product__item-img {
+    width: 100%;
+    aspect-ratio: 1 / 1.2;
+}
+
+.product__item-btn {
+    width: 100%;
+    min-height: 4rem;
+}
+
+.product__item-inventory--low {
+    color: #f00;
+    font-weight: bold;
+}
+
+.btn {
+    padding: .3rem;
+    font-size: 1.2rem;
+}
+
+#myDialog {
+    margin: auto;
+    padding: 1rem;
+}
+
+#myDialog::backdrop {
+    background-color: #000000aa;
+}
+
+.dialog * {
+    font-size: 1.5rem;
+}
+
+.dialog__txt {
+    margin-bottom: .3rem;
+}
+
+.dialog__form {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: .8rem;
+}
+
+.dialog__form-txtContainer {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.dialog__form-txt {
+    display: flex;
+}
+
+.dialog__form-txt:last-of-type {
+    font-size: 1.2rem;
+}
+
+.dialog__form-ipt {
+    flex: 2;
+}
+
+.dialog__form-img {
+    width: 30vw;
+    max-height: 80vh;
+}
+
+.dialog__btn {
+    padding: .1rem .5rem;
+    font-size: 1.2rem;
+}
+
+.dialog__btn:first-of-type {
+    margin-right: .5rem;
+}

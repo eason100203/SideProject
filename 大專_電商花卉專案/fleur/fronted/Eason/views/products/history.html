@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>歷史清單</title>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../public/css/history.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="cart--overlay"></div>
+    <nav>
+      <h2>LOGO</h2>
+      <ul>
+        <div class="carts">
+          <!--購物車圖示-->
+          <svg width="55" viewBox="0 0 69 76" fill="none" xmlns="http://www.w3.org/2000/svg" id="carticon">
+            <path d="M6.14132 27.3774C6.28967 25.5471 7.83115 24.1367 9.68326 24.1367H59.0898C60.9421 24.1367 62.4836 25.5471 62.6318 27.3774L65.7498 65.8461C66.0821 69.9467 62.8155 73.4561 58.6659 73.4561H10.1071C5.95779 73.4561 2.69092 69.9467 3.0233 65.8461L6.14132 27.3774Z" stroke="#D9D9D9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M48.6005 34.7053V17.0912C48.6005 9.30886 42.2368 3 34.3871 3C26.5372 3 20.1737 9.30886 20.1737 17.0912V34.7053" stroke="#D9D9D9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+          <div class="carts__numbercart">
+            <!--購物車圖示內數字-->
+            <div id="number-box" class="carts__number"><span>0</span></div>
+          </div>
+        </div>
+
+      </ul>
+    </nav>
+  </header>
+
+  <div id="forFlexDiv">
+    <div id="container">
+      <div id="historyOrder">
+        <ul id="historyItems">
+          <a href="">
+            <li>個人資料</li>
+          </a>
+          <a href="">
+            <li>訂單查詢</li>
+          </a>
+          <a href="">
+            <li>折價券</li>
+          </a>
+          <a href="">
+            <li>收藏清單</li>
+          </a>
+        </ul>
+
+        <hr>
+
+        <div id="historyDateSelect">
+          <!-- HTML -->
+          <div id="datePick">
+            <div class="arrow" id="prev-arrow">&#8249;</div>
+            <input type="text" id="selected-date" readonly>
+            <div class="arrow" id="next-arrow">&#8250;</div>
+          </div>
+        </div>
+
+        <hr>
+        <div id="runForCircle">
+          <div class="orderInformation">
+            <div class="orderNumber">
+              <p>訂單編號：PO23265860</p>
+              <a href="">
+                <p class="orderNumber__detail">訂單詳情</p>
+              </a>
+            </div>
+            <div id="orderBar">
+              <div class="orderState">
+                <p>日期</p>
+                <p>狀態</p>
+                <p>總金額</p>
+                <p>付款方式</p>
+              </div>
+              <hr class="damnHr">
+              <div class="orderState orderState__secLine">
+                <p>2023/5/30</p>
+                <p>付款成功</p>
+                <p>NT.1,200</p>
+                <p>貨到付款(超商)</p>
+              </div>
+              <hr class="damnHr">
+            </div>
+          </div>
+
+          <div class="orderInformation">
+            <div class="orderNumber">
+              <p>訂單編號：PO23265860</p>
+              <a href="">
+                <p class="orderNumber__detail">訂單詳情</p>
+              </a>
+            </div>
+            <div id="orderBar">
+              <div class="orderState">
+                <p>日期</p>
+                <p>狀態</p>
+                <p>總金額</p>
+                <p>付款方式</p>
+              </div>
+              <hr class="damnHr">
+              <div class="orderState orderState__secLine">
+                <p>2023/5/30</p>
+                <p>付款成功</p>
+                <p>NT.1,200</p>
+                <p>貨到付款(超商)</p>
+              </div>
+              <hr class="damnHr">
+            </div>
+          </div>
+
+          <div class="orderInformation">
+            <div class="orderNumber">
+              <p>訂單編號：PO23265860</p>
+              <a href="">
+                <p class="orderNumber__detail">訂單詳情</p>
+              </a>
+            </div>
+            <div id="orderBar">
+              <div class="orderState">
+                <p>日期</p>
+                <p>狀態</p>
+                <p>總金額</p>
+                <p>付款方式</p>
+              </div>
+              <hr class="damnHr">
+              <div class="orderState orderState__secLine">
+                <p>2023/5/30</p>
+                <p>付款成功</p>
+                <p>NT.1,200</p>
+                <p>貨到付款(超商)</p>
+              </div>
+              <hr class="damnHr">
+            </div>
+          </div>
+
+          <div class="orderInformation">
+            <div class="orderNumber">
+              <p>訂單編號：PO23265860</p>
+              <a href="">
+                <p class="orderNumber__detail">訂單詳情</p>
+              </a>
+            </div>
+            <div id="orderBar">
+              <div class="orderState">
+                <p>日期</p>
+                <p>狀態</p>
+                <p>總金額</p>
+                <p>付款方式</p>
+              </div>
+              <hr class="damnHr">
+              <div class="orderState orderState__secLine">
+                <p>2023/5/30</p>
+                <p>付款成功</p>
+                <p>NT.1,200</p>
+                <p>貨到付款(超商)</p>
+              </div>
+              <hr class="damnHr">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    var selectedDate = document.getElementById("selected-date");
+    var prevArrow = document.getElementById("prev-arrow");
+    var nextArrow = document.getElementById("next-arrow");
+
+    var currentDate = new Date();
+    var currentYear = currentDate.getFullYear();
+    var currentMonth = currentDate.getMonth()
+    // console.log(currentMonth);
+    var currentHalfYear = Math.floor(currentDate.getMonth() / 6);
+
+    var lastDate;
+
+    function updateSelectedDate() {
+      //一開始顯示的
+      let startDate = `${currentYear}/${(currentHalfYear * 6 + 1).toString().padStart(2, '0')}`;
+      let endDate = `${currentYear}/${((currentHalfYear + 1) * 6).toString().padStart(2, '0')}`;
+      selectedDate.value = startDate + " - " + endDate;
+      console.log(selectedDate.value);
+
+      //一開始給資料庫的
+      if (currentHalfYear == '1') {
+        lastDate = '31';
+      } else {
+        lastDate = '30';
+      }
+
+      let dataBaseFormatStart = `${currentYear}-${(currentHalfYear * 6 + 1).toString().padStart(2, '0')}-01 00:00:00`;
+      let dataBaseFormatEnd = `${currentYear}-${((currentHalfYear + 1) * 6).toString().padStart(2, '0')}-${lastDate} 23:59:59`;
+      console.log(dataBaseFormatStart);
+      console.log(dataBaseFormatEnd);
+
+    }
+
+    function updateCalendar() {
+      //顯示的
+      let startDate = `${currentYear}/${(currentHalfYear * 6 + 1).toString().padStart(2, '0')}`;
+      let endDate = `${currentYear}/${((currentHalfYear + 1) * 6).toString().padStart(2, '0')}`;
+      selectedDate.value = startDate + " - " + endDate;
+      console.log(selectedDate.value);
+
+      //給資料庫的
+      if (currentHalfYear == '1') {
+        lastDate = '31';
+      } else {
+        lastDate = '30';
+      }
+
+      let dataBaseFormatStart = `${currentYear}-${(currentHalfYear * 6 + 1).toString().padStart(2, '0')}-01 00:00:00`;
+      let dataBaseFormatEnd = `${currentYear}-${((currentHalfYear + 1) * 6).toString().padStart(2, '0')}-${lastDate} 23:59:59`;
+      console.log(dataBaseFormatStart);
+      console.log(dataBaseFormatEnd);
+
+    }
+
+    prevArrow.addEventListener("click", function() {
+      //   currentYear--;
+      if (currentHalfYear === 0) {
+        currentYear--;
+        currentHalfYear = 1;
+      } else {
+        currentHalfYear = 0;
+      }
+      updateCalendar();
+    });
+
+    nextArrow.addEventListener("click", function() {
+      if (currentHalfYear === 1) {
+        currentYear++;
+        currentHalfYear = 0;
+      } else {
+        currentHalfYear = 1;
+      }
+      updateCalendar();
+    });
+
+    updateSelectedDate();
+
+
+
+    $(`#historyItems a`).each(function(index, item) {
+      $(item).on('click', function(e) {
+        e.preventDefault();
+        $(`#historyItems a`).removeClass('borderLink')
+        $(this).addClass('borderLink')
+      })
+    })
+  </script>
+</body>
+
+</html>

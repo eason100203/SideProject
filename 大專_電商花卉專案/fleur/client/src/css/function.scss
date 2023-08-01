@@ -1,0 +1,50 @@
+@mixin RWD($size) {
+    @media screen and (max-width: #{$size}px) {
+        @content
+    }
+}
+
+;
+
+@mixin filter_shadow($x, $y, $b, $c) {
+    filter: drop-shadow($x $y $b $c);
+    -webkit-filter: drop-shadow($x $y $b $c);
+}
+
+;
+
+@mixin text-outdent($fontSize, $wordCount, $space: false, $power: 1) {
+    @if $space ==false {
+        padding-left: calc($fontSize * $wordCount);
+        text-indent: calc(($fontSize * $wordCount) * -1)
+    }
+
+    @else if $space ==true {
+        padding-left: calc($fontSize * $wordCount + .5rem * $power);
+        text-indent: calc(($fontSize * $wordCount + .5rem * $power) * -1)
+    }
+
+    @else {
+        @error "Unknown #{$space}";
+    }
+}
+
+@function getRandom($min, $max, $point: false) {
+    @if ($point ==false) {
+        @return floor(random() * ($max - $min + 1)) + $min;
+    }
+
+    @else {
+        @return floor(random() * ($max - $min)) + $min + random();
+    }
+}
+
+@function getRandomPoint($min, $max) {
+    $temp: getRandom(floor($min), ceil($max), true);
+
+    @while ($min > $temp or $temp > $max) {
+        $temp: getRandom(floor($min), ceil($max), true);
+    }
+
+    @return $temp;
+}

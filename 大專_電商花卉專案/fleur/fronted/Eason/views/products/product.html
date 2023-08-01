@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>所有商品</title>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../../public/css/product.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+  </style>
+</head>
+
+<body>
+  <div id="container">
+
+    <div id="selectBar768">
+      <div id="selectFor768">
+        <p id="items768">所有商品</p>
+        <p id="iconDown" class="iconSelect">▼</p>
+        <p id="iconUp" class="iconSelect">▲</p>
+      </div>
+      <div id="allItems768">
+        <p><a href="">-綠色植栽</a></p>
+        <p><a href="">-玫瑰花束</a></p>
+        <p><a href="">-百合花束</a></p>
+        <p><a href="">-向日葵花束</a></p>
+        <p><a href="">-其他類花束</a></p>
+        <p><a href="">-畢業季精選</a></p>
+        <p><a href="">-情人節精選</a></p>
+        <p><a href="">-母親節精選</a></p>
+      </div>
+
+    </div>
+
+    <div id="searchItemsFor768">
+      <div class="wrap">
+        <div class="search">
+          <input class="search-bar" type="text" name="search" id="searchFor768" placeholder="產品搜尋...">
+          <button class="search-btn" value=""><i class="fa-solid fa-magnifying-glass fa-rotate-90"></i></button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="stickyTest">
+      <div id="selectBar">
+        <div class="allItems">
+          <p>所有商品</p>
+          <hr>
+        </div>
+        <div id="searchItems">
+          <div class="wrap">
+            <div class="search">
+              <input class="search-bar" type="text" name="search" id="search" placeholder="產品搜尋...">
+              <button class="search-btn" value=""><i class="fa-solid fa-magnifying-glass fa-rotate-90"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div id="selectItems">
+          <p><a href="">-綠色植栽</a></p>
+          <hr>
+          <p><a href="">-玫瑰花束</a></p>
+          <hr>
+          <p><a href="">-百合花束</a></p>
+          <hr>
+          <p><a href="">-向日葵花束</a></p>
+          <hr>
+          <p><a href="">-其他類花束</a></p>
+          <hr>
+          <p><a href="">-畢業季精選</a></p>
+          <hr>
+          <p><a href="">-情人節精選</a></p>
+          <hr>
+          <p><a href="">-母親節精選</a></p>
+          <hr>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="productBar">
+      <div class="allProduct">
+        <p><a href="">/綠色植栽</a></p>
+
+        <button id="timeDateSelect">排序</button>
+        <dialog id="sortList" class="sortList">
+          <ul class="sortList__list">
+            <li class="sortList__item"><a href="">金額由低至高</a></li>
+            <li class="sortList__item"><a href="">金額由高至低</a></li>
+            <li class="sortList__item"><a href="">最新上架</a></li>
+            <li class="sortList__item"><a href="">最高人氣</a></li>
+          </ul>
+        </dialog>
+
+        <hr>
+        <div id="myProduct">
+
+          <!-- <div class="productItems">
+            <a href="">
+            <div class="productImg"><img class="flowerExample" src="../../public/images/flowerExample.jpg" alt=""></div>
+            <div class="productPrice">
+              <p class="flowername">玫瑰花束</p>
+              <p class="prices">$9999</p></a>
+              <a href=""><img class='shoppingCarIcon' src="../../public/images/shoppingCar-icons.png" alt=""></a>
+            </div> -->
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <script src="../../public/js/product.js"></script>
+</body>
+
+</html>

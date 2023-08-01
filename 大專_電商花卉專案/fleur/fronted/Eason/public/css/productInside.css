@@ -1,0 +1,383 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+#container {
+    /* margin-top: 100px; */
+    display: flex;
+    /* border: 2px solid seagreen; */
+    padding: 0 2rem;
+}
+
+#imgDiv {
+    /* border: 2px salmon solid; */
+    width: 35%;
+}
+
+.imgItems {
+    /* border: 2px aqua solid; */
+    height: 50vh;
+}
+
+.imgItems img {
+    width: 100%;
+    height: 50vh;
+}
+
+.scrollStyle {
+    box-shadow: 0 2px 5px rgb(56, 56, 56);
+}
+
+
+#test {
+    width: 65%;
+}
+
+#contentDiv {
+    width: 100%;
+    position: sticky;
+    z-index: 6666;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#MainContent {
+    /* border: 2px slateblue solid; */
+    width: 70%;
+    height: 100vh;
+}
+
+.ItemName {
+    margin-top: 20px;
+    /* border: 2px sienna solid; */
+    display: flex;
+    font-size: 1.8rem;
+    justify-content: space-between;
+    color: #4C4844;
+}
+
+.flowerName {
+    /* border: 2px sienna solid; */
+    width: 450px;
+}
+
+.CountButton {
+    margin-top: 40px;
+    border: #4C4844 1px solid;
+    display: flex;
+    position: relative;
+}
+
+.quantity_reduce {
+    width: 30%;
+    height: 60px;
+    border: none;
+    background-color: white;
+    font-size: 2rem;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.quantity_number {
+    width: 40%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 12px;
+    color: #4C4844;
+}
+
+
+.quantity_increase {
+    width: 30%;
+    height: 60px;
+    border: none;
+    text-align: center;
+    background-color: white;
+    font-size: 1.5rem;
+    padding-top: 0px;
+    cursor: pointer;
+}
+
+.btnSet2 {
+    display: flex;
+    margin: 7vh 0 0 0;
+    justify-content: space-between;
+
+}
+
+
+#next2 {
+    background-color: white;
+    width: 250px;
+    height: 60px;
+    font-size: 1.2rem;
+    border: #4C4844 1px solid;
+    color: #4C4844;
+}
+
+#next3 {
+    background-color: black;
+    width: 250px;
+    height: 60px;
+    font-size: 1.2rem;
+    border: #4C4844 1px solid;
+    color: #f5f5f5;
+    box-sizing: border-box;
+}
+
+
+
+/* #next2:hover,
+#next3:hover {
+    border-radius: 0;
+    border: 0;
+    width: 250px;
+    height: 70px;
+    background-color: black;
+    color: #f5f5f5;
+    font-size: 1.5rem;
+
+} */
+
+hr {
+    margin-top: 2.5rem;
+    border: none;
+    height: 0.5px;
+    background-color: #D9D9D9;
+}
+
+#itemInfo {
+    margin-top: 10px;
+    display: flex;
+    /* border: #dc8937 2px solid; */
+}
+
+#Infomation{
+    /* border: #4C4844 2px solid; */
+    width: 50%;
+    margin-right: 40px;
+}
+
+#infoName {
+    font-size: 1.5rem;
+    padding: 20px 0;
+    color: #4C4844;
+}
+
+#InfoContent {
+    font-size: 1.2rem;
+    color: #988D91;
+}
+
+
+#Specification {
+    font-size: 1.5rem;
+    padding: 20px 0;
+    color: #4C4844;
+}
+
+.SpecificationItem {
+    font-size: 1.2rem;
+    color: #988D91;
+}
+
+#lunbo {
+    display: none;
+}
+
+@media screen and (max-width: 391px) {
+    #container {
+        /* margin-top: 100px; */
+        display: block;
+        /* border: 2px aqua solid; */
+        padding: 0;
+    }
+
+    #contentDiv {
+        display: block;
+        width: 100%;
+        padding: 0 30px;
+        /* border: 2px solid seagreen; */
+        margin-top: -90px;
+
+    }
+
+    #MainContent {
+        /* border: 2px slateblue solid; */
+        width: 100%;
+    }
+
+
+
+    .flowerName {
+        /* border: 2px sienna solid; */
+        width: 350px;
+    }
+
+    #imgDiv {
+        display: none;
+    }
+
+    .imgItems {
+        /* border: 2px aqua solid; */
+        height: 400px;
+    }
+
+    .imgItems img {
+        width: 100%;
+        height: 350px;
+    }
+
+    #test {
+        width: 100%;
+        /* border: 2px salmon solid; */
+    }
+
+
+    #contentDiv {
+        width: 100%;
+        /* border: 2px seagreen solid; */
+        display: block;
+    }
+
+
+
+    .ItemName {
+        display: block;
+        /* border: 2px sienna solid; */
+        font-size: 1.2rem;
+        color: #4C4844;
+        width: 100%;
+        margin-top: 0px;
+        padding: 20px 0;
+    }
+
+    #lunbo {
+        display: block;
+    }
+
+    .slick-dots {
+        position: absolute;
+        top: 310px;
+    }
+
+    .slick-dots li {
+        scale: 1.5;
+    }
+
+    .CountButton {
+        margin-top: 15px;
+        border: #4C4844 1px solid;
+    }
+
+    .quantity_reduce {
+        width: 30%;
+        border: none;
+        background-color: white;
+        font-size: 2rem;
+        padding-bottom: 0px;
+        cursor: pointer;
+
+    }
+
+    .quantity_number {
+        width: 40%;
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+
+    .quantity_increase {
+        width: 30%;
+        height: 60px;
+        border: none;
+        text-align: center;
+        background-color: white;
+        font-size: 1.5rem;
+        padding-top: 2px;
+        cursor: pointer;
+    }
+
+    .btnSet2 {
+        display: flex;
+        margin: 4vh 0 0 0;
+        justify-content: space-between;
+
+    }
+
+    #next2 {
+        background-color: white;
+        width: 150px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+
+    #next3 {
+        background-color: black;
+        width: 150px;
+        height: 40px;
+        font-size: 1rem;
+        color: #f5f5f5;
+    }
+
+    #Infomation{
+        /* border: #4C4844 2px solid; */
+        width: 100%;
+        /* margin-right: 20px; */
+    }
+
+    /* #next2:hover,
+    #next3:hover {
+        border-radius: 0;
+        border: 0;
+        width: 250px;
+        height: 40px;
+        background-color: black;
+        color: #f5f5f5;
+        font-size: 1rem;
+    } */
+
+    hr {
+        margin-top: 2.5rem;
+    }
+
+    #itemInfo {
+        margin-top: 20px;
+    }
+
+    #infoName {
+        font-size: 1.2rem;
+        padding: 15px 0 5px 0;
+    }
+
+
+    #InfoContent {
+        font-size: 1rem;
+    }
+
+
+    #Specification {
+        font-size: 1.2rem;
+        padding: 15px 0 5px 0;
+    }
+
+    .SpecificationItem {
+        font-size: 1rem;
+    }
+
+    #itemInfo {
+        display: block;
+        margin-top: 30px;
+        /* border: #4C4844 2px solid; */
+    }
+
+}

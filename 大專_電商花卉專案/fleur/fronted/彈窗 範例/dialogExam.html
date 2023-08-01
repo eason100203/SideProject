@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./into.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- 登入彈窗 -->
+    <div>
+        <div class="CCR"><span id="logisticsReady">登入彈窗</span></div>
+        <div>1.5rem 1.2rem 1rem</div>
+    </div>
+    <dialog id="dialogOpen3">
+        <div class="closeDialog">X</div>
+        <form class="dialogBlock">
+            <div class="dialogMember">
+                <div class="into">會員登入</div>
+                <div>加入會員</div>
+            </div>
+            <hr>
+            <div class="dialogMemberInto">
+                <div>會員帳號登入</div>
+                <button id="forget">忘記密碼</button>
+            </div>
+            <input type="text" placeholder="Email 電子信箱" class="inputText"> <br>
+            <input type="text" placeholder="Password 會員密碼" class="inputText">
+        </form>
+        <div>
+            <input type="submit" value="登入會員" class="dialogBtn submit">
+        </div>
+    </dialog>
+    <!-- 寄出驗證碼 -->
+    <div>
+        <div class="CCR"><span id="logisticsReady4">寄出驗證碼</span></div>
+        <div>3rem 1.5rem 1rem</div>
+    </div>
+    <dialog id="dialogOpen6" class="dialog2">
+        <div class="closeDialog">X</div>
+        <form class="dialogBlock">
+            <div class="into3">
+                F&nbsp;L&nbsp;E&nbsp;U&nbsp;R&nbsp;
+            </div>
+            <div class="into4">
+                已發送驗證碼至您的信箱
+            </div>
+        </form>
+        <div>
+            <input type="submit" value="確定" class="dialogBtn3 submit">
+        </div>
+    </dialog>
+    <!-- 輸入驗證碼 -->
+    <div>
+        <div class="CCR"><span id="logisticsReady8">輸入驗證碼</span></div>
+        <div>1.5rem 1rem</div>
+    </div>
+    <dialog id="dialogOpen10" class="dialog3">
+        <div class="closeDialog">X</div>
+        <form class="dialogBlock">
+            <div class="into4">
+                輸入驗證碼 
+            </div>
+            <div class="number">
+                <input class="rectangle" maxlength="1"></input>
+                <input class="rectangle" maxlength="1"></input>
+                <input class="rectangle" maxlength="1"></input>
+                <input class="rectangle" maxlength="1"></input>
+                <input class="rectangle" maxlength="1"></input>
+                <input class="rectangle" maxlength="1"></input>
+            </div>
+        </form>
+        <div class="btnGroup">
+            <input type="submit" value="沒有收到驗證碼" class="dialogBtn4 submit">
+            <input type="submit" value="確定" class="dialogBtn5 submit">
+        </div>
+    </dialog>
+
+
+
+    <script>
+        let a = document.querySelector("#logisticsReady")
+        let b = document.querySelector("#dialogOpen3")
+
+        a.addEventListener("click", function () {
+            b.showModal();
+        })
+
+        let g = document.querySelector("#logisticsReady4")
+        let h = document.querySelector("#dialogOpen6")
+
+        g.addEventListener("click", function () {
+            h.showModal();
+        })
+
+        let m = document.querySelector("#logisticsReady8")
+        let n = document.querySelector("#dialogOpen10")
+
+        m.addEventListener("click", function () {
+            n.showModal();
+        })
+        //關閉按鈕class
+        let closeBtn = document.querySelectorAll(".closeDialog")
+        closeBtn.forEach(element => {
+            element.addEventListener("click", function () {
+                b.close()
+                h.close()
+                n.close()
+            })
+        });
+        //提交按鈕class
+        let submitBtn = document.querySelectorAll(".submit")
+
+        submitBtn.forEach(element => {
+            element.addEventListener("click", function () {
+                b.close()
+                h.close()
+                n.close()
+            })
+        });
+    </script>
+</body>
+
+</html>

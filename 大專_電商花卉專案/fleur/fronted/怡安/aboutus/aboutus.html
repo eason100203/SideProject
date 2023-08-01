@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- 導入各種包 -->
+  <link rel="stylesheet" href="_css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="styles/aboutus_main.css">
+  <script src="_js/bootstrap.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+  </style>
+
+  <!-- 標題與logo -->
+  <title>關於我們</title>
+</head>
+
+<body>
+  <div id="aboutus_background">
+    <img src="./img/about_back.png" alt="">
+    <div style="width: 100%; padding: 90px;">
+      <div id="aboutus_title">
+        <h2>Life is a flower,and love is
+          honey of the flower. </h2>
+        <hr class="line" />
+        <p class="aboutus_text New">一束花的儀式感，永遠不會過時 — </p>
+        <p class="aboutus_text">即使花瓣凋零，花也依然永續長存，</p>
+        <p class="aboutus_text">花香會繼續留在這個世界，</p>
+        <p class="aboutus_text">使我們的記憶深處，芬芳馥郁。</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-wrap="false">
+    <div class="carousel-inner">
+      <div id="forFlexDiv">
+        <div class="carousel-item active">
+          <img src="./img/about_back_2.png" class="carouselImg">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>關於我們 </h3>
+            <p>平臺成立於2016年春天，創立過程充滿艱辛,
+              但本著對花卉產業的熱誠與執著,透過嚴格的審查與優良的賣家合作
+              經過專業的配送,我們願每一位客人，都能挑到最適合的花束！</p>
+            <button class="carousel-control-next" type="button" id="next_btn" style="height: 48px;" data-bs-target="#carouselExampleControls" data-bs-slide="next" onclick="next_click()">
+              <img src="./img/NEXT_2.png" style="height: 65%;">
+            </button>
+          </div>
+
+        </div>
+
+        <div class="carousel-item hello123">
+          <img src="./img/about_back_3.png" class="carouselImg">
+          <div class="carousel-caption hello1234">
+            <p>快速<img src="./img/flower frame.png" alt="" class="img-fluid imgposition"></p>
+            <p>便利 <img src="./img/flower frame.png" alt="" class="img-fluid imgposition"></p>
+            <p>時尚 <img src="./img/flower frame.png" alt="" class="img-fluid imgposition"></p>
+            <p>創新 <img src="./img/flower frame.png" alt="" class="img-fluid imgposition"></p>
+          </div>
+          <div>
+            <button class="carousel-control-prev" type="button" id="prev_btn" style="height: 48px;" data-bs-target="#carouselExampleControls" data-bs-slide="prev" onclick="prev_click()">
+              <img src="./img/BACK_2.png" style="height: 65%;;">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <!-- 導入JavaScripts code -->
+  <script type="text/javascript" src="scripts/main.js"></script>
+
+</body>
+
+</html>

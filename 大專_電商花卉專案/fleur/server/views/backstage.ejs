@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleur後臺系統</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- <script src="https://cdn.bootcss.com/qs/6.7.0/qs.min.js"></script> -->
+    <link rel="stylesheet" href="../public/css/backstage.css">
+</head>
+
+<body>
+    <div class="header">
+        <header class="header__title">Fleur後臺系統</header>
+        <nav class="header__sort">
+            <a href="/backstage/product" class="header__sort-link">顯示所有商品</a>
+            <a href="/backstage/product?onlyOnShelve=true" class="header__sort-link">僅顯示上架商品</a>
+        </nav>
+        <button id="increaseBtn" class="header__btn btn increaseBtn">新增商品</button>
+    </div>
+
+    <main class="product">
+        <header class="product__title">
+            <ul class="product__title-container">
+                <li class="product__title-item">品名</li>
+                <li class="product__title-item">圖片</li>
+                <li class="product__title-item">分類</li>
+                <li class="product__title-item">單價</li>
+                <li class="product__title-item">庫存</li>
+                <li class="product__title-item">花語</li>
+                <li class="product__title-item product__title-item--span3">心情選項</li>
+            </ul>
+        </header>
+        <%for (const product of products) {%>
+            <section class="product__item <%= product.soldState === 'off' ? 'product__item--offShelve' : '' %>">
+                <p class="product__item-inner">
+                    <%= product.pName %>
+                </p>
+                <p class="product__item-inner"><img src="/public/images/product/<%= product.pImage %>"
+                        class="product__item-img"></p>
+                <p class="product__item-inner">
+                    <%= product.category %>
+                </p>
+                <p class="product__item-inner">
+                    <%= product.unitPrice %>
+                </p>
+                <p class="product__item-inner <%= product.inventory < 5 ? 'product__item-inventory--low': '' %>">
+                    <%= product.inventory %>
+                </p>
+                <p class="product__item-inner">
+                    <%= product.meaning %>
+                </p>
+                <p class="product__item-inner">
+                    <%= product.key1 %>
+                </p>
+                <p class="product__item-inner">
+                    <%= product.key2 %>
+                </p>
+                <p class="product__item-inner">
+                    <%= product.key3 %>
+                </p>
+                <button id="modify<%= product.pid %>" class="product__item-btn btn modifyBtn">修改</button>
+                <button id="delete<%= product.pid %>" class="product__item-btn btn deleteBtn">下架</button>
+                <button id="reshelve<%= product.pid %>" class="product__item-btn btn reshelveBtn">重新上架</button>
+            </section>
+            <%}%>
+    </main>
+
+    <dialog id="myDialog" class="dialog"></dialog>
+
+
+    <script src="/public/js/backStage.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>訂單明細</title>
+  <link rel="stylesheet" href="./orderthings.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="cart--overlay"></div>
+    <nav>
+      <h2>LOGO</h2>
+      <ul>
+        <div class="carts">
+          <!--購物車圖示-->
+          <svg width="55" viewBox="0 0 69 76" fill="none" xmlns="http://www.w3.org/2000/svg" id="carticon">
+            <path d="M6.14132 27.3774C6.28967 25.5471 7.83115 24.1367 9.68326 24.1367H59.0898C60.9421 24.1367 62.4836 25.5471 62.6318 27.3774L65.7498 65.8461C66.0821 69.9467 62.8155 73.4561 58.6659 73.4561H10.1071C5.95779 73.4561 2.69092 69.9467 3.0233 65.8461L6.14132 27.3774Z" stroke="#D9D9D9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M48.6005 34.7053V17.0912C48.6005 9.30886 42.2368 3 34.3871 3C26.5372 3 20.1737 9.30886 20.1737 17.0912V34.7053" stroke="#D9D9D9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+          <div class="carts__numbercart">
+            <!--購物車圖示內數字-->
+            <div id="number-box" class="carts__number"><span>0</span></div>
+          </div>
+        </div>
+
+      </ul>
+    </nav>
+  </header>
+  <div id="outerDiv">
+    <div class="orderDetail">訂單明細</div>
+    <hr>
+    <div class="orderBlock">
+      <span class="orderProduct">
+        商品
+      </span>
+      <span class="orderText">
+        描述
+      </span>
+      <span class="orderPrice">
+        單價
+      </span>
+      <span class="orderQuantity">
+        數量
+      </span>
+      <span class="ordertotal">
+        金額
+      </span>
+    </div>
+    <div class="line"></div>
+    <div class="cartBlock">
+      <img class="cartImage" src="./flower.jpg"> </img>
+      <span class="cartText">玫瑰花束</span>
+      <span class="cartPrice">200</span>
+      <sspan class="cartQuanitiy">2</sspan>
+      <span class="cartTotal">400</span>
+    </div>
+    <div class="line"></div>
+    <div class="cartBlock">
+      <img class="cartImage" src="./flower.jpg"> </img>
+      <span class="cartText">菊花</span>
+      <span class="cartPrice">100</span>
+      <span class="cartQuanitiy">1</span>
+      <span class="cartTotal">100</span>
+    </div>
+    <div class="line"></div>
+    <div class="divBlock">
+      <div id="sale">折價卷代碼</div>
+      <div><span id="dialogReady" class="beforeDialogText">選擇或自行輸入代碼</span></div>
+    </div>
+    <div class="divBlock2">
+      <div class="divnone"><span id="dialogReady390">選擇或自行輸入代碼</span></div>
+      <div id="prompt">週六限定-全館滿 $1000 折抵 $200</div>
+      <button class="closeSaleBtn">取消使用</button>
+    </div>
+    <div class="divBlock3">
+      <div id="prompt390">週六限定</div>
+    </div>
+    <div id="positionBlock">
+      <div class="divBlock4">
+        <div id="prompt390B">全館滿 $1000 折抵 $200</div>
+      </div>
+
+      <button class="closeSaleBtn2">取消使用</button>
+    </div>
+    <dialog id="dialogOpen">
+      <div>
+        <div class="closeDialog">X</div>
+        <div class="dialogBlock">
+          <input type="checkbox" class="checkBox input" >
+          <input type="text" class="saleCode  input" placeholder="請輸入您的折扣代碼">
+        </div>
+        <div class="otherSale">其他優惠卷</div>
+        <div class="dialogBlock">
+          <input type="checkbox" class="checkBox  input">
+          <span class="saleCode2">週六限定-全館滿$1000折抵$200 <br></span>
+          <input type="checkbox" class="checkBox  input" id="checkBoxNone">
+          <span class="saleCode2">單筆訂單限抵一張折價卷</span>
+        </div>
+        <div> <input type="submit" value="確定" class="diaLogBtn submit  input"></div>
+
+      </div>
+    </dialog>
+
+    <div class="line2"></div>
+
+    <div>
+      <div class="afterDialogText">付款方式</div>
+      <div class="CCR"> <span id="creditCardReady"> 信用卡線上刷卡</span></div>
+    </div>
+    <dialog id="dialogOpen2">
+      <div class="closeDialog">X</div>
+      <form class="dialogBlock" id="dialog">
+        <div>
+          <label class="dialogRadio"><input type="radio" name="howTo" value="creditPay" class="input">信用卡線上刷卡</label>
+        </div>
+        <div>
+          <label class="dialogRadio"><input type="radio" name="howTo" value="pageHomePay" class="input">貨到付款(宅配)</label>
+        </div>
+        <div>
+          <label class="dialogRadio"><input type="radio" name="howTo" value="page711Pay" class="input">貨到付款(超商)</label>
+        </div>
+      </form>
+      <div>
+        <input type="submit" value="確定" class="diaLogBtn submit input">
+      </div>
+    </dialog>
+
+    <div class="line2"></div>
+    <div>
+      <div class="afterDialogText">運送方式</div>
+      <div class="CCR"><span id="logisticsReady">宅配方式</span></div>
+    </div>
+    <dialog id="dialogOpen3">
+      <div class="closeDialog">X</div>
+      <form class="dialogBlock" id="dialog2">
+        <div>
+          <label class="dialogRadio">
+            <input type="radio" name="logistics" value="home"  class="input">宅配</label>
+        </div>
+        <div>
+          <label class="dialogRadio">
+            <input type="radio" name="logistics" value="pay711" class="input">超商貨到付款</label>
+        </div>
+        <div>
+          <label class="dialogRadio">
+            <input type="radio" name="logistics" value="page" class="input">超商純取貨</label>
+        </div>
+      </form>
+      <div>
+        <input type="submit" value="確定" class="diaLogBtn submit input">
+      </div>
+    </dialog>
+    <div class="line2"></div>
+    <div class="priceTextBlock">
+      <div class="priceTextFirst">商品小計 </div>
+      <div class="priceTextFirst" id="a1">NT.120000</div>
+      <div class="priceText">折價卷折扣金額</div>
+      <div class="priceText" id="a2">-NT.200</div>
+      <div class="priceText">運費</div>
+      <div class="priceText" id="a3">NT.150</div>
+      <div class="priceTextEnd">總金額 </div>
+      <div class="priceTextEnd" id="a4">NT.1150</div>
+    </div>
+    <div class="btnGrid">
+      <button id="up">上一步</button>
+      <button id="down">下一步</button>
+    </div>
+  </div>
+
+  <script>
+    //dialog
+    let a = document.querySelector("#dialogReady")
+    let b = document.querySelector("#dialogOpen")
+    let a390 = document.querySelector("#dialogReady390")
+    a.addEventListener("click", function() {
+      b.showModal();
+    })
+    a390.addEventListener("click", function() {
+      b.showModal();
+    })
+
+    let d = document.querySelector("#creditCardReady")
+    let e = document.querySelector("#dialogOpen2")
+    d.addEventListener("click", function() {
+      e.showModal();
+    })
+
+    let g = document.querySelector("#logisticsReady")
+    let h = document.querySelector("#dialogOpen3")
+
+    g.addEventListener("click", function() {
+      h.showModal();
+    })
+
+    //關閉按鈕class
+    let closeBtn = document.querySelectorAll(".closeDialog")
+    closeBtn.forEach(element => {
+      element.addEventListener("click", function() {
+        b.close()
+        e.close()
+        h.close()
+      })
+    });
+    //提交按鈕class
+    let submitBtn = document.querySelectorAll(".submit")
+
+    submitBtn.forEach(element => {
+      element.addEventListener("click", function() {
+        b.close()
+        e.close()
+        h.close()
+      })
+    });
+
+    submitBtn.forEach(element => {
+      element.addEventListener("click", function() {
+        console.log(dialog.howTo.value)
+        console.log(dialog2.logistics.value)
+      })
+    });
+  </script>
+</body>
+
+</html>
