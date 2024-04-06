@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="../_js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="./css/netflix_style.css">
+</head>
+
+<body>
+    <!-- 不限時數的節目與電影 -->
+
+    <!-- 神隱少女
+    2001 | 年齡分級：7+ | 2 小時 5 分鐘 | 動漫電影
+    千尋意外來到一個由女巫治理的魔法世界。在這裏，所有違抗女巫的人都被變成了動物。
+    主演：柊瑠美，入野自由，夏木麻里 -->
+
+    <!-- 這部傑作出自宮崎駿之手，是奧斯卡史上唯一一部抱回最佳動畫片的非英語電影。 -->
+
+    <!-- 類似影片 -->
+    <!-- https://www.netflix.com/tw/title/70028883 -->
+    <!-- https://www.netflix.com/tw/title/60032294 -->
+    <!-- https://www.netflix.com/tw/title/60027106 -->
+    <!-- https://www.netflix.com/tw/title/70106454 -->
+    <!-- https://www.netflix.com/tw/title/70019058 -->
+    <!-- https://www.netflix.com/tw/title/60027393 -->
+    <!-- https://www.netflix.com/tw/title/70216227 -->
+    <!-- https://www.netflix.com/tw/title/70045021 -->
+
+    <nav class="navbar navtest">
+        <div class="container-fluid d-flex">
+            <a class="navbar-brand me-auto d-block d-sm-none" href="https://www.netflix.com/tw/"><img
+                    src="./img/pngegg.png" class="ms-1" style="width: 55px;"></a>
+            <a class="navbar-brand me-auto d-none d-sm-block" href="https://www.netflix.com/tw/"><img
+                    src="./img/logonetflix.png" class="ms-3" style="width: 120px;"></a>
+            <span class="text-white d-none d-lg-block pe-3">不限時數的節目與電影</span>
+            <a href="" class="btn btn-danger text-white me-2">立即加入</a>
+            <a href="" class="btn text-white border me-4">登入</a>
+        </div>
+    </nav>
+    <div class="d-flex sectiontest">
+        <div class="heroimg d-none d-sm-block">
+            <figure class="d-none d-sm-block  mt-lg-5 ms-lg-5 pt-lg-3 imglocation">
+                <img src="./img/spirited_away_logo.jpg"  alt="">
+                <h1>神隱少女</h1>
+                <figcaption>
+                    <p>2001 | 年齡分級：7+ | 2 小時 5 分鐘 | 動漫電影</p>
+                    <p>
+                        千尋意外來到一個由女巫治理的魔法世界。在這裏，所有違抗女巫的人都被變成了動物。
+                    </p>
+                    <p><span>主演：</span>柊瑠美，入野自由，夏木麻里</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="smcontent d-block d-sm-none">
+            <div class="smallimg d-block d-sm-none"></div>
+            <img src="./img/spirited_away_logo.jpg" alt="" class="imglogo">
+            <h1>神隱少女</h1>
+            <figcaption>
+                <p>2001 | 年齡分級：7+ | 2 小時 5 分鐘 | 動漫電影</p>
+                <p>
+                    千尋意外來到一個由女巫治理的魔法世界。在這裏，所有違抗女巫的人都被變成了動物。
+                </p>
+                <p><span>主演：</span>柊瑠美，入野自由，夏木麻里</p>
+            </figcaption>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="d-flex d-sm-none enternflixsm mb-5">
+            <img src="./img/pngegg.png" alt="">
+            <p>盡情觀賞。</p>
+            <a class="btn btn-danger " href="">立即加入</a>
+        </div>
+    </div>
+    <div class="container-fluid px-5">
+        <div class="d-none d-sm-flex enternflix">
+            <img src="./img/pngegg.png" alt="">
+            <p>盡情觀賞。</p>
+            <a class="btn btn-danger ms-auto" href="">立即加入</a>
+        </div>
+    </div>
+    <div class="container-fluid intromov">
+        <hr>
+        <div class="d-flex justify-content-center align-items-center">
+            <p class="text-start text-sm-center align-items-center">這部傑作出自宮崎駿之手，是奧斯卡史上唯一一部抱回最佳動畫片的非英語電影。</p>
+        </div>
+        <hr>
+    </div>
+    <div class="container-fluid actor mt-5">
+        <h2>更多細節</h2>
+        <div class="row d-flex">
+            <div class="col-12 col-sm-6 col-lg-3">
+                <h5>離線觀賞</h5>
+                <p>可供下載</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <h5>類型</h5>
+                <p>日本，親子片，動漫電影，兒童親子片</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <h5>電影性質……</h5>
+                <p>感人</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <h5>音訊</h5>
+                <p>English，Japanese [Original]，Mandarin</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <h5>字幕</h5>
+                <p>English，Japanese，Traditional Chinese</p>
+            </div>
+        </div>
+        <div class="row  actorunder">
+            <h5>演員 </h5>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <p>柊瑠美</p>
+                <p>澤口靖子</p>
+                <p>大泉洋</p>
+
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+
+                <p>入野自由</p>
+                <p>我修院達也</p>
+                <p>菅原文太</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+
+                <p>夏木麻里</p>
+                <p>神木隆之介</p>
+                <p>小林郁夫</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <p>內藤剛志</p>
+                <p>玉井夕海</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <h2 class="text-white mt-5 mb-3">類似影片</h2>
+        <div class="row othermovie justify-content-center">
+            <div class="col-12 col-sm-6 col-lg-4  col-xxl-3"><a href=""><img src="./img/img_01.jpg" class="img-fluid"
+                        alt=""></a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4  col-xxl-3"><a href=""><img src="./img/img_02.jpg" alt=""
+                        class="img-fluid"></a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4  col-xxl-3"><a href=""><img src="./img/img_03.jpg" alt=""
+                        class="img-fluid"></a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4  col-xxl-3"><a href=""><img src="./img/img_04.jpg" alt=""
+                        class="img-fluid"></a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4  col-xxl-3"><a href=""><img src="./img/img_05.jpg" alt=""
+                        class="img-fluid"></a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4  col-xxl-3"><a href=""><img src="./img/img_06.jpg" alt=""
+                        class="img-fluid"></a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4  col-xxl-3"><a href=""><img src="./img/img_07.jpg" alt=""
+                        class="img-fluid"></a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4  col-xxl-3"><a href=""><img src="./img/img_08.jpg" alt=""
+                        class="img-fluid"></a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4  col-xxl-3"><a href=""><img src="./img/img_01.jpg" alt=""
+                        class="img-fluid"></a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4  col-xxl-3"><a href=""><img src="./img/img_02.jpg" alt=""
+                        class="img-fluid"></a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4  col-xxl-3"><a href=""><img src="./img/img_03.jpg" alt=""
+                        class="img-fluid"></a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4  col-xxl-3"><a href=""><img src="./img/img_04.jpg" alt=""
+                        class="img-fluid"></a>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>
